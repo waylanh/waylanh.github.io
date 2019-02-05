@@ -67,7 +67,7 @@ function mySkills(data) {
   data.list.forEach(function(skill) {
     var num1 = skill.search(/\./);
     var newSkill = skill.slice(0,num1);
-    html += '<div><img src="/img/logos/' +skill+ '" alt="' +newSkill+ ' logo" class="logos"><br>' +newSkill+ '</div>';
+    html += '<div><img src="img/logos/' +skill+ '" alt="' +newSkill+ ' logo" class="logos"><br>' +newSkill+ '</div>';
   })
   html += '</div></div>';
   return html;
