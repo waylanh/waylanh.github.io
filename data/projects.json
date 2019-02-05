@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Anonymous Message Board",
+    "text": "Post, report, or delete a thread or a reply. Uses Node/Express for server, Mongoose/mongoDB along with mLab for database hosting, Mocha/Chai for testing, Helmet for security, bcrypt for hashing passwords, and more.",
+    "image": "img/screen/message.png",
+    "page": "https://mess-board1-project.glitch.com/",
+    "code": "https://github.com/Waymans/Anonymous-Message-Board"
+  },
+  {
+    "title": "Pomodoro Clock",
+    "text": "A timer that has changeable session and break lengths. Uses React for rendering changes in time along with css for styling.",
+    "image": "img/screen/clock.png",
+    "page": "https://imp-convert1-project.glitch.me/",
+    "code": "https://github.com/Waymans/Metric-Imperial-Converter"
+  },
+  {
+    "title": "Stock Price Checker",
+    "text": "Pull stock price data from IEX API. Uses Node/Express for server, Mongoose/mongoDB along with mLab for database hosting, Mocha/Chai for testing, and Helmet for security.",
+    "image": "img/screen/stock.png",
+    "page": "https://stock-price1-project.glitch.me/",
+    "code": "https://github.com/Waymans/Stock-Price-Checker"
+  },
+  {
+    "title": "JavaScript Calculator",
+    "text": "Uses JavaScript and jQuery.",
+    "image": "img/screen/calculator.png",
+    "page": "",
+    "code": ""
+  },
+  {
+    "title": "Bar Graph",
+    "text": "",
+    "image": "img/screen/bar.png",
+    "page": "",
+    "code": ""
+  },
+  {
+    "title": "Exercise Tracker",
+    "text": "",
+    "image": "img/screen/exercise.png",
+    "page": "https://exercise1-project.glitch.me/",
+    "code": "https://github.com/Waymans/Exercise-Tracker"
+  },
+  {
+    "title": "Choropleth Map",
+    "text": "View data from a tooltip for each U.S. county. Uses Data Driven Documents (D3) to better visualize data, along with styling from CSS.",
+    "image": "img/screen/map.png",
+    "page": "",
+    "code": ""
+  },
+  {
+    "title": "Issue Tracker",
+    "text": "Convert metric to imperial or vice versa. Uses Node/Express for server, Mongoose/mongoDB along with mLab for database hosting, Mocha/Chai for testing, and Helmet for security.",
+    "image": "img/screen/issue.png",
+    "page": "https://issue-track1-project.glitch.me/",
+    "code": "https://github.com/Waymans/Issue-Tracker"
+  },
+  {
+    "title": "Drum Machine",
+    "text": "Post, report, or delete a thread or a reply. Uses React for rendering changes for clicks and audio. Also uses CSS for styling.",
+    "image": "img/screen/drum.png",
+    "page": "",
+    "code": ""
+  },
+  {
+    "title": "Heatmap",
+    "text": "",
+    "image": "img/screen/heatmap.png",
+    "page": "",
+    "code": ""
+  },
+  {
+    "title": "URL Shortener",
+    "text": "",
+    "image": "img/screen/url.png",
+    "page": "",
+    "code": ""
+  },
+  {
+    "title": "Markdown Previewer",
+    "text": "",
+    "image": "img/screen/markdown.png",
+    "page": "",
+    "code": ""
+  }
+]
