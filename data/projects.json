@@ -1,86 +1,98 @@
 [
   {
     "title": "Anonymous Message Board",
-    "text": "Post, report, or delete a thread or a reply. Uses Node/Express for server, Mongoose/mongoDB along with mLab for database hosting, Mocha/Chai for testing, Helmet for security, bcrypt for hashing passwords, and more.",
+    "text": "The final project I did for freeCodeCamp to receive a Full Stack certification. The app involves CRUD operations, password hashing and security features. It was a lot of fun.",
     "image": "img/screen/message.png",
     "page": "https://mess-board1-project.glitch.com/",
-    "code": "https://github.com/Waymans/Anonymous-Message-Board"
+    "code": "https://github.com/Waymans/freeCodeCamp/Back-End/InfoSec-Quality-Assurance/Anon-Message-Board",
+    "class": "all node mongodb jquery"
   },
   {
     "title": "Pomodoro Clock",
-    "text": "A timer that has changeable session and break lengths. Uses React for rendering changes in time along with css for styling.",
+    "text": "A timer that has changeable session and break lengths. Uses React for rendering changes along with css for styling. I've always enjoyed working with React!",
     "image": "img/screen/clock.png",
-    "page": "https://imp-convert1-project.glitch.me/",
-    "code": "https://github.com/Waymans/Metric-Imperial-Converter"
+    "page": "apps/clock/index.html",
+    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Front-End-Libraries/Pomodoro-Clock",
+    "class": "all react"
   },
   {
     "title": "Stock Price Checker",
-    "text": "Pull stock price data from IEX API. Uses Node/Express for server, Mongoose/mongoDB along with mLab for database hosting, Mocha/Chai for testing, and Helmet for security.",
+    "text": "Pulls stock price data from IEX API. This was the first time I used routes with a request. I thought this would be a nice mobile app so I decided to practice with Bootstrap.",
     "image": "img/screen/stock.png",
     "page": "https://stock-price1-project.glitch.me/",
-    "code": "https://github.com/Waymans/Stock-Price-Checker"
+    "code": "https://github.com/Waymans/freeCodeCamp/Back-End/InfoSec-Quality-Assurance/Stock-Price-Checker",
+    "class": "all node mongodb jquery bootstrap"
   },
   {
     "title": "JavaScript Calculator",
-    "text": "Uses JavaScript and jQuery.",
+    "text": "Simple calculator using JavaScript, and also jQuery. First time I really used JavaScript within an app. It was a lot of fun and I gained some good experience from it.",
     "image": "img/screen/calculator.png",
-    "page": "",
-    "code": ""
+    "page": "apps/calculator/index.html",
+    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Front-End-Libraries/JavaScript-Calculator",
+    "class": "all jquery"
   },
   {
     "title": "Bar Graph",
-    "text": "",
+    "text": "My first experience using D3 along with requesting data from an external source. It was a good learning experience where I had to visualize the data in a bar graph.",
     "image": "img/screen/bar.png",
-    "page": "",
-    "code": ""
+    "page": "apps/barchart/index.html",
+    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Data-Visualization/Bar-Chart",
+    "class": "all d3"
   },
   {
     "title": "Exercise Tracker",
-    "text": "",
+    "text": "An app for fCC that uses CRUD operations. Used Mongoose to make a schema for my database that is hosted on mLab. Had fun on this project working with databases again.",
     "image": "img/screen/exercise.png",
     "page": "https://exercise1-project.glitch.me/",
-    "code": "https://github.com/Waymans/Exercise-Tracker"
+    "code": "https://github.com/Waymans/freeCodeCamp/Back-End/Apis-and-Microservices/Exercise-Tracker",
+    "class": "all node mongodb"
   },
   {
     "title": "Choropleth Map",
-    "text": "View data from a tooltip for each U.S. county. Uses Data Driven Documents (D3) to better visualize data, along with styling from CSS.",
+    "text": "Uses Data Driven Documents (D3) to better visualize data, along with styling from CSS. Uses two different requests which was a first along with TopoJSON for topography.",
     "image": "img/screen/map.png",
-    "page": "",
-    "code": ""
+    "page": "apps/choropleth/index.html",
+    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Data-Visualization/Choropleth-Map",
+    "class": "all d3"
   },
   {
     "title": "Issue Tracker",
-    "text": "Convert metric to imperial or vice versa. Uses Node/Express for server, Mongoose/mongoDB along with mLab for database hosting, Mocha/Chai for testing, and Helmet for security.",
+    "text": "Tracks issues that client inputs. Uses mLab for database hosting, Mocha/Chai for testing, and Helmet for security. More experience working with databases that I enjoyed.",
     "image": "img/screen/issue.png",
     "page": "https://issue-track1-project.glitch.me/",
-    "code": "https://github.com/Waymans/Issue-Tracker"
+    "code": "https://github.com/Waymans/freeCodeCamp/Back-End/InfoSec-Quality-Assurance/Issue-Tracker",
+    "class": "all node mongodb jquery bootstrap"
   },
   {
     "title": "Drum Machine",
-    "text": "Post, report, or delete a thread or a reply. Uses React for rendering changes for clicks and audio. Also uses CSS for styling.",
+    "text": "This was a fun and simple React app. Any of the nine key presses or button click ends with a specific audio sound being played. This was great in helping me learn more about React.",
     "image": "img/screen/drum.png",
-    "page": "",
-    "code": ""
+    "page": "apps/drum/index.html",
+    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Front-End-Libraries/Drum-Machine",
+    "class": "all react"
   },
   {
     "title": "Heatmap",
-    "text": "",
+    "text": "Another data visualization app using D3. This one cross examines data by both year and month separating them into blocks. Found a cool way to use a pre-defined color set.",
     "image": "img/screen/heatmap.png",
-    "page": "",
-    "code": ""
+    "page": "apps/heatmap/index.html",
+    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Data-Visualization/Heat-Map",
+    "class": "all d3"
   },
   {
     "title": "URL Shortener",
-    "text": "",
+    "text": "A URL shortener that returns the shortened version as a link to a website. One of my first back-end apps that I made for the fCC curriculum. It helped me get more familiar with databases.",
     "image": "img/screen/url.png",
-    "page": "",
-    "code": ""
+    "page": "https://url-shortener1-project.glitch.me/",
+    "code": "https://github.com/Waymans/freeCodeCamp/Back-End/Apis-and-Microservices/URL-Shortener",
+    "class": "all node mongodb"
   },
   {
     "title": "Markdown Previewer",
-    "text": "",
+    "text": "My second React app. Always thought these previewers were cool so it was fun to make one myself. It was also a nice hands-on experience using React again.",
     "image": "img/screen/markdown.png",
-    "page": "",
-    "code": ""
+    "page": "apps/markdown/index.html",
+    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Front-End-Libraries/Markdown-Previewer",
+    "class": "all react"
   }
 ]

@@ -1,13 +1,14 @@
 [
   {
     "name": "About",
-    "text": "&emsp; Hi, my name is Waylan, and welcome to my webpage! I'm a programmer who loves to learn new things and also challenge myself with interesting projects. Mostly what I work with stems from JavaScript, but I am eager to learn much more! I have a background in math which initially pushed me towards technologies like TeX and RStudio. While at the time, although I found them very fun, I did not think I would have considered going into programming as a career. Well, here I am. <br><br> I stumbled upon a free online course from freeCodeCamp and from there my journey began. I jumped right in to basic web pages working with HTML and CSS without having ever touched them before. Soon after I was weaving through the JavaScript language working on the basic fundamentals and writing algorithms to solve challenges. Shortly I was making my webpages come to life with the help of React and jQuery, also being able to showcase data with Data Driven Documents(D3). Eventually, I came to the back end, and although confusing at first, I was able to understand and put together full stack web applications using Node, MongoDB and the like. <br><br> Although I haven't been doing this for very long I want to continue learning and enjoy doing so. I plan to increase my current skills by challenging myself with more full stack projects while working on JavaScript algorithms and data structures. Feel free to contact me if you have any thoughts or questions. I hope you like what you see!"
+    "text": "&emsp; Hi, my name is Waylan, and welcome to my portfolio! I'm a programmer who loves to learn new things and also challenge myself with interesting projects. Mostly what I work with stems from JavaScript, but I am eager to learn much more! I have a background in math which initially pushed me towards technologies like TeX and RStudio. While at the time, although I found them very fun, I did not think I would have considered going into programming as a career. Well, here I am. <br><br>&emsp; I stumbled upon a free online course from freeCodeCamp and from there my journey began. I jumped right in to basic web pages working with HTML and CSS without having ever touched them before. Soon after I was weaving through the JavaScript language working on the basic fundamentals and writing algorithms to solve challenges. Shortly I was making my webpages come to life with the help of React and jQuery, also being able to showcase data with Data Driven Documents(D3). Eventually, I came to the back end, and although confusing at first, I was able to understand and put together full stack web applications using Node, MongoDB and the like. <br><br>&emsp; Although I haven't been doing this for very long I want to continue learning and enjoy doing so. I plan to increase my current skills by challenging myself with more full stack projects while working on JavaScript algorithms and data structures. Feel free to contact me if you have any thoughts or questions. I hope you like what you see!"
   },
   {
     "name": "Skills"
   },
   {
-    "name": "Projects"
+    "name": "Projects",
+    "classes": ["Node", "MongoDB", "React", "jQuery", "Bootstrap", "D3"]
   },
   {
     "name": "Contact"
