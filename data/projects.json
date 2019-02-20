@@ -4,7 +4,7 @@
     "text": "The final project I did for freeCodeCamp to receive a Full Stack certification. The app involves CRUD operations, password hashing and security features. It was a lot of fun.",
     "image": "img/screen/message.png",
     "page": "https://mess-board1-project.glitch.com/",
-    "code": "https://github.com/Waymans/freeCodeCamp/Back-End/InfoSec-Quality-Assurance/Anon-Message-Board",
+    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Back-End/InfoSec-Quality-Assurance/Anon-Message-Board",
     "class": "all node mongodb jquery"
   },
   {
@@ -20,7 +20,7 @@
     "text": "Pulls stock price data from IEX API. This was the first time I used routes with a request. I thought this would be a nice mobile app so I decided to practice with Bootstrap.",
     "image": "img/screen/stock.png",
     "page": "https://stock-price1-project.glitch.me/",
-    "code": "https://github.com/Waymans/freeCodeCamp/Back-End/InfoSec-Quality-Assurance/Stock-Price-Checker",
+    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Back-End/InfoSec-Quality-Assurance/Stock-Price-Checker",
     "class": "all node mongodb jquery bootstrap"
   },
   {
@@ -36,7 +36,7 @@
     "text": "My first experience using D3 along with requesting data from an external source. It was a good learning experience where I had to visualize the data in a bar graph.",
     "image": "img/screen/bar.png",
     "page": "apps/barchart/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Data-Visualization/Bar-Chart",
+    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Front-End/Data-Visualization/Bar-Chart",
     "class": "all d3"
   },
   {
@@ -52,7 +52,7 @@
     "text": "Uses Data Driven Documents (D3) to better visualize data, along with styling from CSS. Uses two different requests which was a first along with TopoJSON for topography.",
     "image": "img/screen/map.png",
     "page": "apps/choropleth/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Data-Visualization/Choropleth-Map",
+    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Front-End/Data-Visualization/Choropleth-Map",
     "class": "all d3"
   },
   {
@@ -60,7 +60,7 @@
     "text": "Tracks issues that client inputs. Uses mLab for database hosting, Mocha/Chai for testing, and Helmet for security. More experience working with databases that I enjoyed.",
     "image": "img/screen/issue.png",
     "page": "https://issue-track1-project.glitch.me/",
-    "code": "https://github.com/Waymans/freeCodeCamp/Back-End/InfoSec-Quality-Assurance/Issue-Tracker",
+    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Back-End/InfoSec-Quality-Assurance/Issue-Tracker",
     "class": "all node mongodb jquery bootstrap"
   },
   {
@@ -68,7 +68,7 @@
     "text": "This was a fun and simple React app. Any of the nine key presses or button click ends with a specific audio sound being played. This was great in helping me learn more about React.",
     "image": "img/screen/drum.png",
     "page": "apps/drum/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Front-End-Libraries/Drum-Machine",
+    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Front-End/Front-End-Libraries/Drum-Machine",
     "class": "all react"
   },
   {
@@ -76,7 +76,7 @@
     "text": "Another data visualization app using D3. This one cross examines data by both year and month separating them into blocks. Found a cool way to use a pre-defined color set.",
     "image": "img/screen/heatmap.png",
     "page": "apps/heatmap/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Data-Visualization/Heat-Map",
+    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Front-End/Data-Visualization/Heat-Map",
     "class": "all d3"
   },
   {
@@ -92,7 +92,7 @@
     "text": "My second React app. Always thought these previewers were cool so it was fun to make one myself. It was also a nice hands-on experience using React again.",
     "image": "img/screen/markdown.png",
     "page": "apps/markdown/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Front-End-Libraries/Markdown-Previewer",
+    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Front-End/Front-End-Libraries/Markdown-Previewer",
     "class": "all react"
   }
 ]
