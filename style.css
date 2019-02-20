@@ -89,16 +89,70 @@ hr{
   width: 90px; 
   margin: 10px;
 }
+.Mongoose{
+  height: 70px;
+  padding-bottom: 15px
+}
+.TeX{
+  height: 70px;
+  padding-bottom: 15px
+}
+.Github{
+  height: 80px;
+  width: 80px;
+  padding-bottom: 10px
+}
+.freeCodeCamp{
+  height: 75px;
+  padding-bottom: 15px
+}
 @media screen and (max-width: 800px) {
   .logos {
     height: 70px;
     width: 70px;
+  }
+  .Mongoose{
+    height: 50px;
+    padding-bottom: 15px
+  }
+  .TeX{
+    height: 50px;
+    padding-bottom: 10px
+  }
+  .Github{
+    height: 65px;
+    width: 65px;
+    padding-bottom: 10px
+  }
+  .freeCodeCamp{
+    height: 60px;
+    padding-bottom: 10px
   }
 }
 @media screen and (max-width: 400px) {
   .logos {
     height: 40px;
     width: 40px;
+  }
+  .Mongoose{
+    height: 30px;
+    padding-bottom: 5px
+  }
+  .TeX{
+    height: 30px;
+    padding-bottom: 5px
+  }
+  .Github{
+    height: 40px;
+    width: 40px;
+    padding-bottom: 5px
+  }
+  .freeCodeCamp{
+    height: 35px;
+    padding-bottom: 5px
+  }
+  .inline{
+    font-size: 0px;
   }
 }
 
@@ -247,6 +301,7 @@ footer{
 .dropdown-content a{
   color: black;
   text-decoration: none;
+  padding: 5px 0;
   display: block;
 }
 .dropdown-content a:hover{

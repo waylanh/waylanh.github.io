@@ -46,7 +46,7 @@ function mySkills(data) {
   data.list.forEach(function(skill) {
     var num1 = skill.search(/\./);
     var newSkill = skill.slice(0,num1);
-    html += '<div class="inline"><img src="img/logos/' +skill.toLowerCase()+ '" alt="' +newSkill+ ' logo" class="logos"><br>' +newSkill+ '</div>';
+    html += '<div class="inline"><img src="img/logos/' +skill.toLowerCase()+ '" alt="' +newSkill+ ' logo" class="logos ' +newSkill+ '"><br>' +newSkill+ '</div>';
   })
   html += '</div>';
   return html.trim();
@@ -81,7 +81,7 @@ function myProjects(data) {
 function myContacts(data) {
   var html = '';
   data.forEach(function(contact) {
-    html += '<a href="' +contact.link+ '" target="_blank"><img src="' +contact.image+ '" alt="' +contact.name+ ' logo"  class="logos"></a>';
+    html += '<a href="' +contact.link+ '" target="_blank"><img src="' +contact.image+ '" alt="' +contact.name+ ' logo"  class="logos ' +contact.name+ '"></a>';
   });
   return html.trim();
 }

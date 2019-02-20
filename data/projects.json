@@ -8,12 +8,12 @@
     "class": "all node mongodb jquery"
   },
   {
-    "title": "Pomodoro Clock",
-    "text": "A timer that has changeable session and break lengths. Uses React for rendering changes along with css for styling. I've always enjoyed working with React!",
-    "image": "img/screen/clock.png",
-    "page": "apps/clock/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Front-End-Libraries/Pomodoro-Clock",
-    "class": "all react"
+    "title": "CRUD App",
+    "text": "I wanted to gain a better understanding of MongoDB and databases in general for this one without the use of Mongoose. I also wanted it to be visually appealing and somewhat fun.",
+    "image": "img/screen/crud.png",
+    "page": "https://jade-orca.glitch.me/",
+    "code": "https://github.com/Waymans/CRUD-app",
+    "class": "all node mongodb"
   },
   {
     "title": "Stock Price Checker",
@@ -24,12 +24,12 @@
     "class": "all node mongodb jquery bootstrap"
   },
   {
-    "title": "JavaScript Calculator",
-    "text": "Simple calculator using JavaScript, and also jQuery. First time I really used JavaScript within an app. It was a lot of fun and I gained some good experience from it.",
-    "image": "img/screen/calculator.png",
-    "page": "apps/calculator/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Front-End-Libraries/JavaScript-Calculator",
-    "class": "all jquery"
+    "title": "Weather App",
+    "text": "Simple request app that fetches data using Axios. Wanted to make one of these since it would give me more practice with requests and I've seen them around so I wanted to try one for myself.",
+    "image": "img/screen/weather.png",
+    "page": "https://good-crowd.glitch.com/",
+    "code": "https://github.com/Waymans/Weather-app",
+    "class": "all node"
   },
   {
     "title": "Bar Graph",
@@ -40,12 +40,12 @@
     "class": "all d3"
   },
   {
-    "title": "Exercise Tracker",
-    "text": "An app for fCC that uses CRUD operations. Used Mongoose to make a schema for my database that is hosted on mLab. Had fun on this project working with databases again.",
-    "image": "img/screen/exercise.png",
-    "page": "https://exercise1-project.glitch.me/",
-    "code": "https://github.com/Waymans/freeCodeCamp/Back-End/Apis-and-Microservices/Exercise-Tracker",
-    "class": "all node mongodb"
+    "title": "Pomodoro Clock",
+    "text": "A timer that has changeable session and break lengths. Uses React for rendering changes along with css for styling. I've always enjoyed working with React!",
+    "image": "img/screen/clock.png",
+    "page": "apps/clock/index.html",
+    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Front-End-Libraries/Pomodoro-Clock",
+    "class": "all react"
   },
   {
     "title": "Choropleth Map",
@@ -80,12 +80,12 @@
     "class": "all d3"
   },
   {
-    "title": "URL Shortener",
-    "text": "A URL shortener that returns the shortened version as a link to a website. One of my first back-end apps that I made for the fCC curriculum. It helped me get more familiar with databases.",
-    "image": "img/screen/url.png",
-    "page": "https://url-shortener1-project.glitch.me/",
-    "code": "https://github.com/Waymans/freeCodeCamp/Back-End/Apis-and-Microservices/URL-Shortener",
-    "class": "all node mongodb"
+    "title": "JavaScript Calculator",
+    "text": "Simple calculator using JavaScript, and also jQuery. First time I really used JavaScript within an app. It was a lot of fun and I gained some good experience from it.",
+    "image": "img/screen/calculator.png",
+    "page": "apps/calculator/index.html",
+    "code": "https://github.com/Waymans/freeCodeCamp/Front-End/Front-End-Libraries/JavaScript-Calculator",
+    "class": "all jquery"
   },
   {
     "title": "Markdown Previewer",
