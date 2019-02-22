@@ -3,7 +3,7 @@
     "title": "Anonymous Message Board",
     "text": "The final project I did for freeCodeCamp to receive a Full Stack certification. The app involves CRUD operations, password hashing and security features. It was a lot of fun.",
     "image": "img/screen/message.png",
-    "page": "https://mess-board1-project.glitch.com/",
+    "page": "https://mess-board1-project.glitch.me/",
     "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Back-End/InfoSec-Quality-Assurance/Anon-Message-Board",
     "class": "all node mongodb jquery"
   },
@@ -27,7 +27,7 @@
     "title": "Weather App",
     "text": "Simple request app that fetches data using Axios. Wanted to make one of these since it would give me more practice with requests and I've seen them around so I wanted to try one for myself.",
     "image": "img/screen/weather.png",
-    "page": "https://good-crowd.glitch.com/",
+    "page": "https://good-crowd.glitch.me/",
     "code": "https://github.com/Waymans/Weather-app",
     "class": "all node"
   },
