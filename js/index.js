@@ -81,7 +81,7 @@ function myProjects(data) {
 function myContacts(data) {
   var html = '';
   data.forEach(function(contact) {
-    html += '<a href="' +contact.link+ '" target="_blank"><img src="' +contact.image+ '" alt="' +contact.name+ ' logo"  class="logos ' +contact.name+ '"></a>';
+    html += '<a href="' +contact.link+ '" target="_blank"><img src="' +contact.image+ '" alt="' +contact.name+ ' logo" class="logos ' +contact.name+ '" title="'+contact.name+'"></a>';
   });
   return html.trim();
 }
