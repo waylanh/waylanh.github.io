@@ -1,22 +1,22 @@
 $(document).ready(function() {
-  $.getJSON('/data/nav-about.json', function(data) {
+  $.getJSON('/json/nav-about.json', function(data) {
     $('#nav').append(myNav(data));
     $('#about').append(myInfo(data));
     $('#filter').append(myButtons(data[2].classes));
   }); 
-  $.getJSON('/data/skills.json', function(data) {
+  $.getJSON('/json/skills.json', function(data) {
     $('#skills').append(mySkills(data[0]));
     $('#skills').append(mySkills(data[1]));
     $('#skills').append(mySkills(data[2]));
   });
-  $.getJSON('/data/projects.json', function(data) {
+  $.getJSON('/json/projects.json', function(data) {
     $('#container').append(myProjects(data))
     $('.cell').css('display','inline-block');
   });
-  $.getJSON('/data/contacts.json', function(data) {
+  $.getJSON('/json/contacts.json', function(data) {
     $('#contact').append(myContacts(data));
   });
-  $.getJSON('/data/papers.json', function(data) {
+  $.getJSON('/json/papers.json', function(data) {
     $('#foot').append(myLinks(data[0], 'Contact'));
     $('#foot').append(myLinks(data[1], 'Resume'));
     $('#foot').append(myLinks(data[2], 'Math'));

@@ -1,32 +1,32 @@
 [
   {
-    "text": "Front End",
+    "text": "Front End Development",
     "list": [
       "HTML.png",
       "CSS.png",
+      "Sass.png",
       "JavaScript.png",
       "React.png",
       "jQuery.png",
       "D3.js.png",
-      "Bootstrap.png",
-      "Pug.svg"
+      "Bootstrap.png"
     ]
   },
   {
-    "text": "Back End",
+    "text": "Back End Development",
     "list": [
       "Node.js.png",
-      "Express.png",
       "MongoDB.png",
+      "Express.png",
       "Mongoose.png",
-      "Passport.png",
+      "Pug.svg",
       "Mocha.svg",
       "Chai.png",
 	  "Helmet.svg"
     ]
   },
   {
-    "text": "Other ",
+    "text": "Related ",
     "list": [
       "Git.png",
       "mLab.png",

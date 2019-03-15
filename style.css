@@ -78,7 +78,7 @@ h3{
 .inline{
   display: inline-block;
 }
-.front, .back, .other{
+.front, .back, .related{
   padding: 10px 0px 70px 0px; 
 }
 hr{
