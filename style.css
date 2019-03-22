@@ -158,6 +158,9 @@ hr{
 
 /* projects */
 
+.small{
+  font-size: 13px;
+}
 .projects{
   padding: 70px 0px 70px 0px;
   background: #555;
