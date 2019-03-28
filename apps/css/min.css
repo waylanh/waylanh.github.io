@@ -8,10 +8,9 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
-  font: normal normal normal 1em sans-serif;
-  height: 100%; }
+  font: normal normal normal 1em sans-serif; }
 
-body {height: 100%;}
+html, body { margin: 0; height: 100%;}
 
 *,
 *::before,
@@ -96,10 +95,9 @@ caption {
   color: #fff;
   opacity: .8;
   font: 600 1rem sans-serif;
-  padding: .75rem 1.25rem;
+  padding: .78rem 1.25rem;
   margin: 0 0 .5rem 0;
   text-align: center;
-  vertical-align: middle;
   cursor: pointer;
   text-decoration: none;
   line-height: 1; }
@@ -150,7 +148,7 @@ caption {
 .input:focus, 
 .input:active{
   border: 1px solid #ddd;
-  box-shadow: 1px 1px 5px steelblue; }
+  box-shadow: 1px 1px 2px steelblue; }
 
 textarea {
   overflow: auto;
