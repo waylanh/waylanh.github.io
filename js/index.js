@@ -1,8 +1,4 @@
-$(document).ready(function() {
-  // for clickable DOM events on IOS
-  const IS_IOS = /iPad|iPhone|iPod|Windows/.test(navigator.userAgent);
-  IS_IOS ? $('html').addClass('ios'): null;
-  
+$(document).ready(function() {  
   $.getJSON('/json/nav-about.json', function(data) {
     myNav(data);
     myInfo(data);
@@ -41,9 +37,10 @@ $(document).ready(function() {
 function myNav(data) {
   var html = '';
   data.forEach(function(info) {
-    html += '<li class="navLi"><a class="navA" href="#' +info.name.toLowerCase()+ '">' +info.name+ '</a></li>';
+    //html += '<li class="navLi"><a class="navA" href="#' +info.name.toLowerCase()+ '">' +info.name+ '</a></li>';
+    var ele = $('<li class="navLi"><a class="navA">' +info.name+ '</a></li>').click(reLocate);
+    $('#nav').append(ele).fadeIn(1000);
   });
-  $('#nav').append(html.trim()).fadeIn(1000);
 }
 
 //adds about-me content
@@ -106,14 +103,14 @@ function myContacts(data) {
   data.forEach(function(contact) {
     html += '<div class="inline"><a href="' +contact.link+ '" target="_blank"><img src="' +contact.image+ '" alt="' +contact.name+ ' logo" class="logos ' +contact.name+ '" title="'+contact.name+'"></a><p class="link-text2">' +contact.name+ '</p></div>';
   });
-  $('#contact').append(html.trim());
+  $('#contact').append(html.trim()).append($('<br>'));
 }
 
 //adds email/links to pdfs
 function myLinks(data, name) {
   var icon;
   var html = ''; 
-  if (name === 'Contact') { icon = 'fas fa-envelope'; html = '<br>'; }
+  if (name === 'Contact') { icon = 'fas fa-envelope'; }
   else if (name === 'Math') { icon = 'far fa-copy'; html = '<br>'; }
   else if (name === 'Resume') { icon = 'fas fa-copy'; }
   data[name].forEach(function(pdf) {
@@ -141,4 +138,8 @@ function scrollUp() {
 }
 function topFunction() {
   $('html')[0].scrollTop = 0;
+}
+function reLocate() {
+  var ele = $(this).children().html().toLowerCase();
+  $('html,body').animate({scrollTop: $('#'+ele).offset().top});
 }

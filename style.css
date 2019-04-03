@@ -1,9 +1,6 @@
 *{
   box-sizing: border-box;
 }
-.ios, .ios *{
-  cursor: pointer;
-}
 html{
   scroll-behavior: smooth;
   height: 100%;
