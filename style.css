@@ -356,6 +356,9 @@ i{
     text-align: left;
     margin: 0 10%;
   }
+  .para i{
+    text-align: center;
+  }
   .copyright{
     font-size: 13px;
   }
