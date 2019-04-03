@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // for clickable DOM events on IOS
-  const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-  IS_IOS ? $('html')[0].addClass('ios'): null;
+  const IS_IOS = /iPad|iPhone|iPod|Windows/.test(navigator.userAgent);
+  IS_IOS ? $('html').addClass('ios'): null;
   
   $.getJSON('/json/nav-about.json', function(data) {
     myNav(data);

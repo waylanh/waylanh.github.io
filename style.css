@@ -1,16 +1,16 @@
-* {
+*{
   box-sizing: border-box;
 }
-.ios, .ios * {
-    cursor: pointer;
+.ios, .ios *{
+  cursor: pointer;
 }
-html {
+html{
   scroll-behavior: smooth;
   height: 100%;
 }
 body{
   margin: 0;
-  font-family: 'Comfortaa', cursive;/*'Changa', sans-serif;*/
+  font-family: 'Comfortaa', cursive;
   height: 100%;
   text-align: center;
 }
@@ -22,7 +22,7 @@ h1{
   letter-spacing: 10px;
   padding-bottom: 50px;
 }
-.none {
+.none{
   display: none;
 }
 /* navbar */
