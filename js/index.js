@@ -1,26 +1,36 @@
 $(document).ready(function() {
   $.getJSON('/json/nav-about.json', function(data) {
-    $('#nav').append(myNav(data));
-    $('#about').append(myInfo(data));
-    $('#filter').append(myButtons(data[2].classes));
+    myNav(data);
+    myInfo(data);
+    myButtons(data[2].classes);
   }); 
   $.getJSON('/json/skills.json', function(data) {
-    $('#skills').append(mySkills(data[0]));
-    $('#skills').append(mySkills(data[1]));
-    $('#skills').append(mySkills(data[2]));
+    data.forEach(x => { mySkills(x) });
   });
   $.getJSON('/json/projects.json', function(data) {
-    $('#container').append(myProjects(data))
-    $('.cell').css('display','inline-block');
+    myProjects(data);
   });
   $.getJSON('/json/contacts.json', function(data) {
-    $('#contact').append(myContacts(data));
+    myContacts(data);
   });
   $.getJSON('/json/papers.json', function(data) {
-    $('#foot').append(myLinks(data[0], 'Contact'));
-    $('#foot').append(myLinks(data[1], 'Resume'));
-    $('#foot').append(myLinks(data[2], 'Math'));
+    $('#contact').append(myLinks(data[0], 'Contact'));
+    $('#contact').append(myLinks(data[1], 'Resume'));
+    $('#about3 .para').append(myLinks(data[2], 'Math'));
   });
+  
+  var didScroll = false;
+  $(window).scroll(function() {
+    didScroll = true;
+  });
+  setInterval(function() {
+    if ( didScroll ) {
+      didScroll = false;
+      scrollDown();
+      scrollUp();
+    }
+  }, 250);
+  $('#scrollBtn').click(topFunction);
 });
 
 //adds nav info
@@ -29,12 +39,20 @@ function myNav(data) {
   data.forEach(function(info) {
     html += '<li class="navLi"><a class="navA" href="#' +info.name.toLowerCase()+ '">' +info.name+ '</a></li>';
   });
-  return html.trim();
+  $('#nav').append(html.trim()).fadeIn(1000);
 }
 
 //adds about-me content
 function myInfo(data) {
-  return '<p class="para">'+data[0].text+'</p><br><span class="down">&#9660;</span>';
+  var span = '<span class="down">&#9660;</span>';
+  var html1 = '<p class="para">'+data[0].text[0]+'</p>';
+  var html2 = '<p class="para">'+data[0].text[1]+'</p>';
+  var html3 = '<p class="para">'+data[0].text[2]+'</p>';
+  $('#about').append(html1.trim());
+  $('#about2').append(html2.trim());
+  $('#about3').append(html3.trim());
+  $('#home').append(span).fadeIn(500);
+  $('.center-text').delay(500).fadeIn(2000);
 }
 
 //adds logos for skills
@@ -49,7 +67,7 @@ function mySkills(data) {
     html += '<div class="inline"><img src="img/logos/' +skill.toLowerCase()+ '" alt="' +newSkill+ ' logo" class="logos ' +newSkill+ '"><br>' +newSkill+ '</div>';
   })
   html += '</div>';
-  return html.trim();
+  $('#skills').append(html.trim());
 }
 
 function myButtons(data) {
@@ -57,7 +75,7 @@ function myButtons(data) {
   data.forEach(function(name) {
     html += '<button class="button" id="' +name.toLowerCase()+ '">' +name+ '</button>';
   });
-  return html.trim();
+  $('#filter').append(html.trim());
 }
 
 //adds my projects
@@ -67,52 +85,56 @@ function myProjects(data) {
     html += '<div class="cell ' +project.class+ '">' +
       '<img class="image" src="' +project.image+ '" alt="' +project.title+ ' image">' +
       '<div class="cover">' +
-        project.title+ '<br>' +
+        '<span class="pro-title">' +project.title+ '</span><br>' +
         '<p class="text">'+project.text+'<p><br>' +
         '<div class="link"><a href="' +project.page+ '" target="_blank" class="btn">Page</a>' +
         '<a href="' +project.code+ '" target="_blank" class="btn">Code</a></div>' +
       '</div>' +
     '</div>';
   });
-  return html.trim();
+  $('#container').append(html.trim());
+  $('.cell').css('display','inline-block');
 }
 
 //adds links to other account pages
 function myContacts(data) {
   var html = '';
   data.forEach(function(contact) {
-    html += '<a href="' +contact.link+ '" target="_blank"><img src="' +contact.image+ '" alt="' +contact.name+ ' logo" class="logos ' +contact.name+ '" title="'+contact.name+'"></a>';
+    html += '<div class="inline"><a href="' +contact.link+ '" target="_blank"><img src="' +contact.image+ '" alt="' +contact.name+ ' logo" class="logos ' +contact.name+ '" title="'+contact.name+'"></a><p class="link-text2">' +contact.name+ '</p></div>';
   });
-  return html.trim();
+  $('#contact').append(html.trim());
 }
 
 //adds email/links to pdfs
 function myLinks(data, name) {
-  var html = '<div class="dropdown">'+
-          '<button class="dropbtn">' +name+ '</button>'+
-          '<div class="dropdown-content">';
+  var icon;
+  var html = ''; 
+  if (name === 'Contact') { icon = 'fas fa-envelope'; html = '<br>'; }
+  else if (name === 'Math') { icon = 'far fa-copy'; html = '<br>'; }
+  else if (name === 'Resume') { icon = 'fas fa-copy'; }
   data[name].forEach(function(pdf) {
-    html += '<a href="' +pdf.src+ '">' +pdf.name+ '</a>';
+    html += '<div class="inline">' +
+            '<a href="' +pdf.src+ '" title="'+pdf.name+'"><i class="' +icon+' '+pdf.name+ '"></i></a>' +
+            '<p class="link-text">' +pdf.name+ '</p></div>';
   });
-  html += '</div></div>';
   return html.trim();
 }
-
-//adds opacity to down arrow on main screen
-$(window).scroll(function() {
-  var top = $(this).scrollTop();
-  $('.down').css({
-    opacity: function() {
-      var ele = $(this).height();
-      return 1 - 1.1*(top - ele) / top; 
-    }
-  });
-});
 
 //highlights current sort button and filters
 $('#filter').click('.button', function(e){
   $('.active').removeClass('active');
   $('#'+e.target.id+'').addClass('active');
-  $('.cell').css('display','none'); // show() and hide() produce an inline instead
+  $('.cell').css('display','none');
   $('.cell').filter('.'+e.target.id+'').css('display','inline-block');
 });
+
+//scroll functions
+function scrollDown() {
+  $(document).scrollTop() < 100 ? $('.down').fadeIn(500): $('.down').fadeOut(500);
+}
+function scrollUp() {
+  $(document).scrollTop() > 100 ? $('#scrollBtn').fadeIn(500): $('#scrollBtn').fadeOut(500);
+}
+function topFunction() {
+  $('html')[0].scrollTop = 0;
+}

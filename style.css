@@ -15,9 +15,13 @@ main{
   height: 100%;
 }
 h1{
+  font-size: 25px;
   letter-spacing: 10px;
+  padding-bottom: 50px;
 }
-
+.none {
+  display: none;
+}
 /* navbar */
 
 .navUl{
@@ -49,23 +53,41 @@ h1{
   background: #777;
 }
 
+/* home */
+
+.home{
+  padding-top: 70px;
+  min-height: 100%;
+  background: white;
+  color: #333;
+  position: relative;
+}
+.text-title{
+  font-size: 45px;
+}
+.center-text{
+  position: absolute;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+}
+.down {
+  position: absolute;
+  bottom: 0;
+}
+
 /* about */
 
 .about{
   padding-top: 70px;
-  min-height: 100%;
   background: #555;
   color: white;
 }
 .para{
-  text-align: left;
-  margin: 0px 5%;
-  font-size: 15px;
+  text-align: center;
+  margin: 0px 20%;
+  padding-bottom: 100px;
+  font-size: 16px;
   line-height: 2em;
-}
-h3{
-  margin-top: 0;
-  padding-top: 0;
 }
 
 /* skills */
@@ -73,7 +95,6 @@ h3{
 .skills{
   padding-top: 70px;
   height: auto;
-  background: white;
 }
 .inline{
   display: inline-block;
@@ -106,65 +127,17 @@ hr{
   height: 75px;
   padding-bottom: 15px
 }
-@media screen and (max-width: 800px) {
-  .logos {
-    height: 70px;
-    width: 70px;
-  }
-  .Mongoose{
-    height: 50px;
-    padding-bottom: 15px
-  }
-  .TeX{
-    height: 50px;
-    padding-bottom: 10px
-  }
-  .Github{
-    height: 65px;
-    width: 65px;
-    padding-bottom: 10px
-  }
-  .freeCodeCamp{
-    height: 60px;
-    padding-bottom: 10px
-  }
-}
-@media screen and (max-width: 400px) {
-  .logos {
-    height: 40px;
-    width: 40px;
-  }
-  .Mongoose{
-    height: 30px;
-    padding-bottom: 5px
-  }
-  .TeX{
-    height: 30px;
-    padding-bottom: 5px
-  }
-  .Github{
-    height: 40px;
-    width: 40px;
-    padding-bottom: 5px
-  }
-  .freeCodeCamp{
-    height: 35px;
-    padding-bottom: 5px
-  }
-  .inline{
-    font-size: 0px;
-  }
-}
 
 /* projects */
 
-.small{
+.small {
   font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 .projects{
   padding: 70px 0px 70px 0px;
-  background: #555;
-  color: white;
+  color: black;
   height: auto;
 }
 .container{
@@ -175,11 +148,11 @@ hr{
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: white;
+  background-color: #ddd;
   cursor: pointer;
 }
 .button:hover {
-  background-color: #ddd;
+  background-color: #ccc;
 }
 .button.active {
   background-color: #666;
@@ -194,28 +167,12 @@ hr{
   display: none/*inline-block*/;
   line-height: 1.5em;
 }
+.pro-title{
+  font-size: 19px;
+}
 .text{
-  padding: 10px;
-}
-@media screen and (max-width: 1000px) {
-  .cell {
-    width: 60vw;
-  }
-}
-@media screen and (max-width: 800px) {
-  .cell {
-    width: 70vw;
-  }
-}
-@media screen and (max-width: 600px) {
-  .cell {
-    width: 80vw;
-  }
-}
-@media screen and (max-width: 550px) {
-  .text{
-    display: none;
-  }
+  font-size: 16px;
+  padding: 12px;
 }
 .image{
   display: block;
@@ -223,6 +180,7 @@ hr{
   height: auto;
 }
 .cover {
+  padding: 5px;
   position: absolute;
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
@@ -264,55 +222,140 @@ hr{
   cursor: pointer;
 }
 .muchMore{
-  margin-top: 70px; 
+  margin-top: 50px; 
   font-size: 20px;
 }
 
 /* Contact */
 
 .contact{
-  margin-top: 50px;
+  padding-top: 90px;
 }
 footer{
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  padding-top: 90px;
+  padding-bottom: 10px;
+}
+i{
+  color: black;
+  font-size: 70px;
+  margin: 0px 20px 0px 20px;
+}
+.para i{
+  padding-top: 50px;
+  color: white;
+}
+.link-text{
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.link-text2 {
+  padding-bottom: 80px;
+  padding-top: 0;
+  margin-top: 0;
+}
+.scrollTop{
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  font-size: 50px;
 }
 
-.dropbtn{
-  background-color: #333;
-  color: white;
-  padding: 5px;
-  font-size: 16px;
-  border: none;
+/* bg image */
+.home, .projects, .skills, .contact, footer{
+  background-image: 
+    radial-gradient(#eee 15%, transparent 10%),
+    radial-gradient(#eee 10%, transparent 10%);
+  background-size: 60px 60px;
+  background-position: 15px 70px, 45px 40px;
+  background-attachment: fixed;
 }
-.dropdown{
-  position: relative;
-  display: inline-block;
-  padding-bottom: 100px;
-  margin: 10px;
+
+/* Media Querries */
+
+@media screen and (max-width: 1000px) {
+  .cell {
+    width: 60vw;
+  }
 }
-.dropdown-content{
-  display: none;
-  position: absolute;
-  background-color: lightblue;
-  min-width: 110px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  left: -30px;
+@media screen and (max-width: 800px) {
+  .cell {
+    width: 70vw;
+  }
+  .logos {
+    height: 70px;
+    width: 70px;
+  }
+  .Mongoose{
+    height: 50px;
+    padding-bottom: 15px
+  }
+  .TeX{
+    height: 50px;
+    padding-bottom: 10px
+  }
+  .Github{
+    height: 65px;
+    width: 65px;
+    padding-bottom: 10px
+  }
+  .freeCodeCamp{
+    height: 60px;
+    padding-bottom: 10px
+  }
+  i{
+    font-size: 50px;
+  }
 }
-.dropdown-content a{
-  color: black;
-  text-decoration: none;
-  padding: 5px 0;
-  display: block;
+@media screen and (max-width: 600px) {
+  .cell {
+    width: 80vw;
+  }
 }
-.dropdown-content a:hover{
-  background-color: lightgray;
+@media screen and (max-width: 550px) {
+  .text{
+    display: none;
+  }
 }
-.dropdown:hover .dropdown-content{
-  display: block;
-}
-.dropdown:hover .dropbtn{
-  background-color: darkslategray;
+@media screen and (max-width: 400px) {
+  .logos {
+    height: 40px;
+    width: 40px;
+  }
+  .Mongoose{
+    height: 30px;
+    padding-bottom: 5px
+  }
+  .TeX{
+    height: 30px;
+    padding-bottom: 5px
+  }
+  .Github{
+    height: 40px;
+    width: 40px;
+    padding-bottom: 5px
+  }
+  .freeCodeCamp{
+    height: 35px;
+    padding-bottom: 5px
+  }
+  .inline, .link-text, .link-text2{
+    font-size: 0px;
+  }
+  .link-text2 {
+    padding-bottom: 50px;
+  }
+  i, .text-title{
+    font-size: 30px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  .para{
+    text-align: left;
+    margin: 0 10%;
+  }
+  .copyright{
+    font-size: 13px;
+  }
 }
