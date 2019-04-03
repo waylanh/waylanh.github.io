@@ -4,19 +4,17 @@ $(document).ready(function() {
     myInfo(data);
     myButtons(data[2].classes);
   }); 
+  $.getJSON('/json/contacts.json', function(data) {
+    myContacts(data);
+  }); 
   $.getJSON('/json/skills.json', function(data) {
     data.forEach(x => { mySkills(x) });
   });
   $.getJSON('/json/projects.json', function(data) {
     myProjects(data);
   });
-  $.getJSON('/json/contacts.json', function(data) {
-    myContacts(data);
-  });
   $.getJSON('/json/papers.json', function(data) {
-    $('#contact').append(myLinks(data[0], 'Contact'));
-    $('#contact').append(myLinks(data[1], 'Resume'));
-    $('#about3 .para').append(myLinks(data[2], 'Math'));
+    data.forEach(x => { myLinks(x) });
   });
   
   var didScroll = false;
@@ -45,30 +43,30 @@ function myNav(data) {
 
 //adds about-me content
 function myInfo(data) {
-  var span = '<span class="down">&#9660;</span>';
-  var html1 = '<p class="para">'+data[0].text[0]+'</p>';
-  var html2 = '<p class="para">'+data[0].text[1]+'</p>';
-  var html3 = '<p class="para">'+data[0].text[2]+'</p>';
-  $('#about').append(html1.trim());
-  $('#about2').append(html2.trim());
-  $('#about3').append(html3.trim());
+  var span = '<span class="down">&#9660;</span>',
+      html1 = '<p class="para">'+data[0].text[0]+'</p>',
+      html2 = '<p class="para">'+data[0].text[1]+'</p>',
+      html3 = '<p class="para">'+data[0].text[2]+'</p>';
+  $('#about').append(html1);
+  $('#about2').append(html2);
+  $('#about3').append(html3);
   $('#home').append(span).fadeIn(500);
   $('.center-text').delay(500).fadeIn(2000);
 }
 
 //adds logos for skills
 function mySkills(data) {
-  var num2 = data.text.search(/\s/);
-  var name = data.text.slice(0,num2).toLowerCase();
-  var html = '<div class="' +name+ '">' +
+  var num2 = data.text.search(/\s/),
+      name = data.text.slice(0,num2).toLowerCase(),
+      html = '<div class="' +name+ '">' +
              '<h3>' +data.text+ '</h3><hr>';
   data.list.forEach(function(skill) {
-    var num1 = skill.search(/\./);
-    var newSkill = skill.slice(0,num1);
+    var num1 = skill.search(/\./),
+        newSkill = skill.slice(0,num1);
     html += '<div class="inline"><img src="img/logos/' +skill.toLowerCase()+ '" alt="' +newSkill+ ' logo" class="logos ' +newSkill+ '"><br>' +newSkill+ '</div>';
   })
   html += '</div>';
-  $('#skills').append(html.trim());
+  $('#skills').append(html);
 }
 
 function myButtons(data) {
@@ -76,7 +74,7 @@ function myButtons(data) {
   data.forEach(function(name) {
     html += '<button class="button" id="' +name.toLowerCase()+ '">' +name+ '</button>';
   });
-  $('#filter').append(html.trim());
+  $('#filter').append(html);
 }
 
 //adds my projects
@@ -93,7 +91,7 @@ function myProjects(data) {
       '</div>' +
     '</div>';
   });
-  $('#container').append(html.trim());
+  $('#container').append(html);
   $('.cell').css('display','inline-block');
 }
 
@@ -103,22 +101,21 @@ function myContacts(data) {
   data.forEach(function(contact) {
     html += '<div class="inline"><a href="' +contact.link+ '" target="_blank"><img src="' +contact.image+ '" alt="' +contact.name+ ' logo" class="logos ' +contact.name+ '" title="'+contact.name+'"></a><p class="link-text2">' +contact.name+ '</p></div>';
   });
-  $('#contact').append(html.trim()).append($('<br>'));
+  $('#contact').append(html).append($('<br>'));
 }
 
 //adds email/links to pdfs
-function myLinks(data, name) {
-  var icon;
-  var html = ''; 
-  if (name === 'Contact') { icon = 'fas fa-envelope'; }
-  else if (name === 'Math') { icon = 'far fa-copy'; html = '<br>'; }
-  else if (name === 'Resume') { icon = 'fas fa-copy'; }
+function myLinks(data) {
+  var name = Object.keys(data)[0], ele, icon, html = ''; 
+  if (name === 'Contact') { icon = 'fas fa-envelope'; ele = $('#contact'); }
+  else if (name === 'Resume') { icon = 'fas fa-copy'; ele = $('#contact'); }
+  else if (name === 'Math') { icon = 'far fa-copy'; html = '<br>'; ele = $('#about3 .para'); }
   data[name].forEach(function(pdf) {
     html += '<div class="inline">' +
             '<a href="' +pdf.src+ '" title="'+pdf.name+'"><i class="' +icon+' '+pdf.name+ '"></i></a>' +
             '<p class="link-text">' +pdf.name+ '</p></div>';
   });
-  return html.trim();
+  ele.append(html);
 }
 
 //highlights current sort button and filters

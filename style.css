@@ -348,6 +348,9 @@ i{
   i, .text-title{
     font-size: 30px;
   }
+  .scrollTop i{
+    font-size: 50px;
+  }
   h1{
     font-size: 20px;
   }
