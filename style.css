@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
-  cursor: default;
+}
+.ios, .ios * {
+    cursor: pointer;
 }
 html {
   scroll-behavior: smooth;
@@ -256,14 +258,10 @@ i{
   margin-top: 0;
 }
 .scrollTop{
-  cursor: pointer;
   position: fixed;
   bottom: 30px;
   right: 0px;
   font-size: 50px;
-}
-.scrollTop:hover{
-  cursor: pointer;
 }
 
 /* bg image */
@@ -357,11 +355,7 @@ i{
     font-size: 20px;
   }
   .para{
-    text-align: left;
     margin: 0 10%;
-  }
-  .para i{
-    text-align: center;
   }
   .copyright{
     font-size: 13px;
