@@ -261,6 +261,9 @@ i{
   right: 0px;
   font-size: 50px;
 }
+.scrollTop:hover{
+  cursor: pointer;
+}
 
 /* bg image */
 .home, .projects, .skills, .contact, footer{
