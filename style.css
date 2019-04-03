@@ -255,6 +255,7 @@ i{
   margin-top: 0;
 }
 .scrollTop{
+  cursor: pointer;
   position: fixed;
   bottom: 30px;
   right: 0px;
