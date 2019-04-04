@@ -134,7 +134,7 @@ function scrollUp() {
   $(document).scrollTop() > 100 ? $('#scrollBtn').fadeIn(500): $('#scrollBtn').fadeOut(500);
 }
 function topFunction() {
-  $('html')[0].scrollTop = 0;
+  $('body, html').animate({ scrollTop: 0 },500);
 }
 function reLocate() {
   var ele = $(this).children().html().toLowerCase();

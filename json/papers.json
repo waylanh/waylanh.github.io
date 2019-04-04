@@ -9,10 +9,6 @@
     "Resume": [{
 		        "name": "Resume",
                 "src": "pdf/Resume.pdf"
-	           },
-	           {
-		        "name": "Cover Letter",
-                 "src": "pdf/Cover.pdf"
 	           }]
   },
   { 
