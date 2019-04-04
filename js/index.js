@@ -101,14 +101,14 @@ function myContacts(data) {
   data.forEach(function(contact) {
     html += '<div class="inline"><a href="' +contact.link+ '" target="_blank"><img src="' +contact.image+ '" alt="' +contact.name+ ' logo" class="logos ' +contact.name+ '" title="'+contact.name+'"></a><p class="link-text2">' +contact.name+ '</p></div>';
   });
-  $('#contact').append(html).append($('<br>'));
+  $('#resources').append(html).append($('<br>'));
 }
 
 //adds email/links to pdfs
 function myLinks(data) {
   var name = Object.keys(data)[0], ele, icon, html = ''; 
-  if (name === 'Contact') { icon = 'fas fa-envelope'; ele = $('#contact'); }
-  else if (name === 'Resume') { icon = 'fas fa-copy'; ele = $('#contact'); }
+  if (name === 'Contact') { icon = 'fas fa-envelope'; ele = $('#personal'); }
+  else if (name === 'Resume') { icon = 'fas fa-copy'; ele = $('#personal'); }
   else if (name === 'Math') { icon = 'far fa-copy'; html = '<br>'; ele = $('#about3 .para'); }
   data[name].forEach(function(pdf) {
     html += '<div class="inline">' +
