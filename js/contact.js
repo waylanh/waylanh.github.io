@@ -11,5 +11,3 @@ function fadeIn(el) {
   tick();
 }
 fadeIn(document.getElementById('nav'));
-fadeIn(document.getElementById('home'));
-fadeIn(document.getElementById('.center-text'));

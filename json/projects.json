@@ -1,98 +1,65 @@
 [
   {
-    "title": "Anonymous Message Board",
-    "text": "The final project I did for freeCodeCamp to receive a Full Stack certification. The app involves CRUD operations, password hashing and security features. It was a lot of fun.",
-    "image": "img/screen/message.png",
-    "page": "https://mess-board1-project.glitch.me/",
-    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Back-End/InfoSec-Quality-Assurance/Anon-Message-Board",
-    "class": "all node mongodb jquery"
+    "title": "Socketeer",
+    "text": "Instant messaging app.",
+    "image": "img/screen/socket.png",
+    "site": "https://wise-ticket.glitch.me/",
+    "code": "https://github.com/Waymans/Anonymous-Message-Board"
+  },
+    {
+    "title": "A.M.B",
+    "text": "Anonymous message board.",
+    "image": "img/screen/message.jpg",
+    "site": "https://mess-board1-project.glitch.me/",
+    "code": "https://github.com/Waymans/Anonymous-Message-Board"
   },
   {
-    "title": "CRUD App",
-    "text": "I wanted to gain a better understanding of MongoDB and databases in general for this one without the use of Mongoose. I also wanted it to be visually appealing and somewhat fun.",
-    "image": "img/screen/crud.png",
-    "page": "https://jade-orca.glitch.me/",
-    "code": "https://github.com/Waymans/CRUD-app",
-    "class": "all node mongodb"
+    "title": "A&P",
+    "text": "Local Bar & Grill model.",
+    "image": "img/screen/cafeLogo.jpg",
+    "site": "sites/cafeLogo/index.html",
+    "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/cafeLogo"
   },
   {
-    "title": "Stock Price Checker",
-    "text": "Pulls stock price data from IEX API. This was the first time I used routes with a request. I thought this would be a nice mobile app so I decided to practice with Bootstrap.",
-    "image": "img/screen/stock.png",
-    "page": "https://stock-price1-project.glitch.me/",
-    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Back-End/InfoSec-Quality-Assurance/Stock-Price-Checker",
-    "class": "all node mongodb jquery bootstrap"
+    "title": "Ratchet",
+    "text": "Band webpage mock-up.",
+    "image": "img/screen/bandPage.png",
+    "site": "sites/bandPage/index.html",
+    "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/bandPage"
   },
   {
-    "title": "Weather App",
-    "text": "Request app that fetches data using Axios. Wanted to make one of these since it would give me more practice with requests and I've seen them around so I wanted to try one for myself.",
-    "image": "img/screen/weather.png",
-    "page": "https://good-crowd.glitch.me/",
-    "code": "https://github.com/Waymans/Weather-app",
-    "class": "all node"
+    "title": "Fresh",
+    "text": "Fictional app download page.",
+    "image": "img/screen/newApp.png",
+    "site": "sites/newApp/index.html",
+    "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/newApp"
   },
   {
-    "title": "Bar Graph",
-    "text": "My first experience using D3 along with requesting data from an external source. It was a good learning experience where I had to visualize the data in a bar graph.",
-    "image": "img/screen/bar.png",
-    "page": "apps/barchart/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Front-End/Data-Visualization/Bar-Chart",
-    "class": "all d3"
+    "title": "Photo-EQ",
+    "text": "Photo equipment site layout.",
+    "image": "img/screen/photoPage.png",
+    "site": "sites/photoPage/index.html",
+    "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/photoPage"
   },
   {
-    "title": "Pomodoro Clock",
-    "text": "A timer that has changeable session and break lengths. Uses React for rendering changes along with css for styling. I've always enjoyed working with React!",
-    "image": "img/screen/clock.png",
-    "page": "apps/clock/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Front-End/Front-End-Libraries/Pomodoro-Clock",
-    "class": "all react"
+    "title": "Data-Driven",
+    "text": "D3 compilation.",
+    "image": "",
+    "site": "",
+    "code": ""
   },
   {
-    "title": "Choropleth Map",
-    "text": "Uses Data Driven Documents (D3) to better visualize data, along with styling from CSS. Uses two different requests which was a first along with TopoJSON for topography.",
-    "image": "img/screen/map.png",
-    "page": "apps/choropleth/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Front-End/Data-Visualization/Choropleth-Map",
-    "class": "all d3"
+    "title": "Native",
+    "text": "Apps made with React Native.",
+    "image": "",
+    "site": "",
+    "code": ""
   },
   {
-    "title": "Issue Tracker",
-    "text": "Tracks issues that client inputs. Uses mLab for database hosting, Mocha/Chai for testing, and Helmet for security. More experience working with databases that I enjoyed.",
-    "image": "img/screen/issue.png",
-    "page": "https://issue-track1-project.glitch.me/",
-    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Back-End/InfoSec-Quality-Assurance/Issue-Tracker",
-    "class": "all node mongodb jquery bootstrap"
-  },
-  {
-    "title": "Drum Machine",
-    "text": "This was a fun React app. Any of the nine key presses or button click ends with a specific audio sound being played. This was great in helping me learn more about React.",
-    "image": "img/screen/drum.png",
-    "page": "apps/drum/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Front-End/Front-End-Libraries/Drum-Machine",
-    "class": "all react"
-  },
-  {
-    "title": "Heatmap",
-    "text": "Another data visualization app using D3. This one cross examines data by both year and month separating them into blocks. Found a cool way to use a pre-defined color set.",
-    "image": "img/screen/heatmap.png",
-    "page": "apps/heatmap/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Front-End/Data-Visualization/Heat-Map",
-    "class": "all d3"
-  },
-  {
-    "title": "JavaScript Calculator",
-    "text": "Calculator using JavaScript, and also jQuery. First time I really used JavaScript within an app. It was a lot of fun and I gained some good experience from it.",
-    "image": "img/screen/calculator.png",
-    "page": "apps/calculator/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Front-End/Front-End-Libraries/JavaScript-Calculator",
-    "class": "all jquery"
-  },
-  {
-    "title": "Markdown Previewer",
-    "text": "My second React app. Always thought these previewers were cool so it was fun to make one myself. It was also a nice hands-on experience using React again.",
-    "image": "img/screen/markdown.png",
-    "page": "apps/markdown/index.html",
-    "code": "https://github.com/Waymans/freeCodeCamp/tree/master/Front-End/Front-End-Libraries/Markdown-Previewer",
-    "class": "all react"
+    "title": "Serv",
+    "text": "Public service apps.",
+    "image": "",
+    "site": "",
+    "code": ""
   }
 ]

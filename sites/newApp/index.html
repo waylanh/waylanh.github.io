@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet"> 
+    <link href="./style.css" rel="stylesheet">
+    <script src="./client.js" defer></script>
+  </head>
+  <body>
+
+    <main class="content">
+
+      <div id="home" class="slideshow-container">
+        <div class="slides slides1 fade">
+          <span class="text">FRESH</span>
+        </div>
+        <div class="slides slides2 fade">
+          <span class="text">NEW</span>
+        </div>
+        <div class="slides slides3 fade">
+          <span class="text">APP</span>
+        </div>
+        <a class="prev" id="prev">&#10094;</a>
+        <a class="next" id="next">&#10095;</a>
+        <div class="dots">
+          <span class="dot" id="one"></span> 
+          <span class="dot" id="two"></span> 
+          <span class="dot" id="three"></span> 
+        </div>
+      </div>
+      
+      <ul id="topnav" class="topnav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="right"><a href="#contact">Contact</a></li>
+      </ul>
+      
+      <div class="container row">
+        <div class="column">
+          <div class="app-info">
+            <h3>Why Fresh?</h3>
+            <p>Donec nec eros elit. Vivamus vel mollis lorem. Nam sed aliquam enim, eget imperdiet lorem. Proin condimentum magna eget magna semper varius. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum mauris id dignissim rhoncus. Aenean posuere, diam cursus scelerisque dignissim, orci magna ultrices felis, quis tincidunt odio diam sit amet ex. </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="download">
+            <h3><i class="fa fa-download"></i> Download</h3>
+            <ul>
+              <li><i class="fab fa-windows" style="color: #0074D9"></i> Windows</li>
+              <li><i class="fab fa-linux"></i> Linux</li>
+              <li><i class="fab fa-android" style="color: #2ECC40"></i> Android</li>
+              <li><i class="fab fa-apple"></i> iOS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="flex pad">
+            <div class="pic-contain flex">
+              <div class="mobile-pic"></div>
+              <span class="dot-app"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid1">
+        <h3 class="contact-title">Our Offer</h3>
+        
+        <div class="row">
+          <div class="col">
+            <h3>Experience</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum mauris id dignissim rhoncus.</p>
+          </div>
+
+          <div class="col">
+            <h3>Security</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum mauris id dignissim rhoncus.</p>
+          </div>
+
+          <div class="col">
+            <h3>Support</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum mauris id dignissim rhoncus.</p>
+          </div>
+
+          <div class="col">
+            <h3>Backup</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum mauris id dignissim rhoncus.</p>
+          </div>
+        </div>
+        
+        <div class="features">
+          <div><i class="fa fa-cloud" style="color: #0074D9"></i><p>Cloud</p></div>
+          <div><i class="fa fa-comment" style="color: #aa1f3f"></i><p>Messages</p></div>
+          <div><i class="fa fa-database" style="color: #FFDC00"></i><p>Storage</p></div>
+          <div><i class="fas fa-money-check" style="color: #01FF70"></i><p>Purchase</p></div>
+          <div><i class="fa fa-calendar-check" style="color: #85144b"></i><p>Reminders</p></div>
+          <div><i class="fa fa-battery-full" style="color: #2ECC40"></i><p>Energy</p></div>
+          <div><i class="fa fa-chart-line" style="color: #7FDBFF"></i><p>Profits</p></div>
+          <div><i class="fa fa-shipping-fast" style="color: #FF851B"></i><p>Ship</p></div>
+          <div><i class="fa fa-square-root-alt" style="color: #39CCCC"></i><p>Formulas</p></div>
+          <div><i class="fa fa-fingerprint" style="color: #001f3f"></i><p>Authorize</p></div>
+          <div><i class="fa fa-comment" style="color: #aa1f3f"></i><p>Support</p></div>
+          <div><i class="fa fa-lock" style="color: #FF4136"></i><p>Security</p></div>
+        </div>
+        
+      </div>
+
+      <div class="grid2" id="plans">
+        <div class="contact-title">
+          <h3>Pricing</h3>
+          <p>Choose a plan that accommodates you.</p>
+        </div>
+
+        <div class="columns">
+          <ul class="price">
+            <li class="header" style="background: #FF4136">Basic</li>
+            <li class="grey">FREE</li>
+            <li>500MB Storage</li>
+            <li>1 Email</li>
+            <li>1 Domain</li>
+            <li>500MB Bandwidth</li>
+            <li>Customer Support</li>
+            <li class="grey"><a href="#" class="button">Sign Up</a></li>
+          </ul>
+        </div>
+
+        <div class="columns">
+          <ul class="price">
+            <li class="header" style="background: #0074D9">Pro</li>
+            <li class="grey">$ 14.99 / year</li>
+            <li>5GB Storage</li>
+            <li>5 Emails</li>
+            <li>5 Domains</li>
+            <li>5GB Bandwidth</li>
+            <li>Customer Support</li>
+            <li class="grey"><a href="#" class="button">Sign Up</a></li>
+          </ul>
+        </div>
+
+        <div class="columns">
+          <ul class="price">
+            <li class="header" style="background: #2ECC40">Premium</li>
+            <li class="grey">$ 29.99 / year</li>
+            <li>Unlimited Storage</li>
+            <li>10 Emails</li>
+            <li>10 Domains</li>
+            <li>Unlimited Bandwidth</li>
+            <li>Customer Support</li>
+            <li class="grey"><a href="#" class="button">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid3" id="about">
+        <div class="team">
+          <h3 class="team-title">Meet the team</h3>
+        </div>
+        
+        <div class="columns card">
+          <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="John">
+          <h1>John Doe</h1>
+          <p class="title">CEO & Co-Founder</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum mauris id dignissim rhoncus.</p>
+          <div class="icons">
+            <a href="#"><i class="fab fa-twitter-square" style="color: #7FDBFF"></i></a>  
+            <a href="#"><i class="fab fa-linkedin" style="color: #0074D9"></i></a>  
+            <a href="#"><i class="fab fa-facebook" style="color: #0094D9"></i></a> 
+            <a href="#"><i class="fab fa-github-square"></i></a> 
+          </div>
+          <p><button>Contact</button></p>
+        </div>
+        <div class="columns card">
+          <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Jane">
+          <h1>Jane Doe</h1>
+          <p class="title">Co-Founder</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum mauris id dignissim rhoncus.</p>
+          <div class="icons">
+            <a href="#"><i class="fab fa-twitter-square" style="color: #7FDBFF"></i></a>  
+            <a href="#"><i class="fab fa-linkedin" style="color: #0074D9"></i></a>  
+            <a href="#"><i class="fab fa-facebook" style="color: #0094D9"></i></a> 
+            <a href="#"><i class="fab fa-github-square"></i></a> 
+          </div>
+          <p><button>Contact</button></p>
+        </div>
+        <div class="columns card">
+          <img src="https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Mary">
+          <h1>Mary Ross</h1>
+          <p class="title">Designer</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc condimentum mauris id dignissim rhoncus.</p>
+          <div class="icons">
+            <a href="#"><i class="fab fa-twitter-square" style="color: #7FDBFF"></i></a>  
+            <a href="#"><i class="fab fa-linkedin" style="color: #0074D9"></i></a>  
+            <a href="#"><i class="fab fa-facebook" style="color: #0094D9"></i></a> 
+            <a href="#"><i class="fab fa-github-square"></i></a> 
+          </div>
+          <p><button>Contact</button></p>
+        </div>
+      </div>
+      
+      <div class="image">
+      </div>
+  
+      <div class="contact-title" id="contact">
+        <h3 class="">Contact Us</h3>
+      </div>
+
+      <form class="contact" action="/action_page.php" target="_blank">
+        <div class="name">
+          <label>Name:</label>
+          <input type="text" name="Name" required>
+        </div>
+        <div class="email">
+          <label>Email:</label>
+          <input type="email" name="Email" required>
+        </div>
+        <div class="subject">
+          <label>Subject:</label>
+          <input name="Subject" required>
+        </div>
+        <div class="message">
+          <label>Message:</label>
+          <input name="Message" required>
+        </div>
+        <button type="submit" class="">Send</button>
+      </form>
+
+    </main>
+
+    <footer class="footer">
+      <div class="icons">
+        <p>
+          <i class="fab fa-facebook" style="color: #0074D9"></i>
+          <i class="fab fa-instagram" style="color: #aa1f3f"></i>
+          <i class="fab fa-twitter" style="color: #0094D9"></i>
+          <i class="fab fa-linkedin" style="color: #0074D9"></i>
+        </p>
+      </div>
+      <p>Copyright &copy; 2019 | Waymans</p>
+    </footer>
+
+  </body>
+</html>

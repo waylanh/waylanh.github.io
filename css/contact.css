@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box
+}
+html {
+  height: 100%;
+}
+body{
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+  height: 100%;
+  text-align: center;
+}
+
+/* navbar */
+
+.navUl{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.navLi{
+  float: left;
+  width: 25%;
+  text-align: center;
+  font-size: 14px;
+}
+.navA{
+  display: block;
+  padding: 8px;
+  background: #333;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.navA:hover{
+  background: #777;
+}
+
+/* Contact */
+
+.contact{
+  padding-top: 80px;
+  min-height: 100%;
+  color: #333;
+}
+.col {
+  float: left;
+  width: 50%;
+  padding: 10px 50px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h1{
+  padding-bottom: 5vh;
+}
+h3{
+  padding-top: 5vh;
+}
+.top{
+  width: 100%;
+}
+.link1{
+  display: inline-block;
+  padding: 10px 30px;
+}
+img{
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.personal, .info-links{
+  text-align: left;
+}
+.link-text{
+  font-size: 15px;
+}
+.link-text2 {
+  display: inline-block;
+  padding-bottom: 0px;
+  padding-top: 0;
+  margin-top: 0;
+}
+.scrollTop{
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  font-size: 50px;
+}
+
+/* footer */
+
+footer{
+  text-align: center;
+  padding-bottom: 0px;
+}
+.none {
+  display: none;
+}
+.copyright{
+  font-size: 11px;
+}
+
+/* Logos */
+
+.link{
+  padding: 20px;
+}
+.logos{
+  height: 25px;
+  width: 25px; 
+}
+.GitHub{
+  height: 25px;
+  width: 25px;
+  padding-bottom: 3px
+}
+
+/* Media Querries */
+
+@media screen and (max-width: 600px) {
+  .col {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .link-text, .link-text2{
+    font-size: 0px;
+  }
+  .link-text2 {
+    padding-bottom: 0px;
+  }
+  .text-title{
+    font-size: 30px;
+  }
+  h1{
+    font-size: 20px;
+  }
+}

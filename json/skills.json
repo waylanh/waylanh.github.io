@@ -4,10 +4,10 @@
     "list": [
       "HTML.png",
       "CSS.png",
-      "Sass.png",
       "JavaScript.png",
-      "React.png",
+      "Sass.png",
       "jQuery.png",
+      "React.png",
       "D3.js.png",
       "Bootstrap.png"
     ]
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "text": "Related ",
+    "text": "Other ",
     "list": [
       "Git.png",
       "mLab.png",
