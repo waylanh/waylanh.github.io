@@ -34,8 +34,7 @@ function myProjects(data) {
                 </div>
                 <h2>${project.title}</h2>
                 <p class="title">${project.text}</p>
-                ${!project.image ? '<p class="soon">Coming Soon.</p>': ''}
-                <p><a href="${project.site}" target="_blank">Site</a><a href="${project.code}" target="_blank">Code</a></p>
+                ${!project.image ? '<p class="soon">Coming Soon.</p><p><a class="full" href="https://github.com/waymans" target="_blank">GitHub</a></p>': '<p><a href="'+project.site+'" target="_blank">Site</a><a href="'+project.code+'" target="_blank">Code</a></p>'}
               </div>
             </div>`;
   });

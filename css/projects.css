@@ -104,6 +104,9 @@ body{
   cursor: pointer;
   font-size: 18px;
 }
+.card .full{ 
+  width: 100%;
+}
 .card a:hover {
   opacity: 0.7;
 }
