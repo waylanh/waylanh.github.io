@@ -350,8 +350,8 @@ input[type=submit]:hover {
 
 .image{
   height: 500px;
-  background-image: url('https://images.pexels.com/photos/196652/pexels-photo-196652.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background: #ccc;
+  background-image: url('https://images.pexels.com/photos/196652/pexels-photo-196652.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover;

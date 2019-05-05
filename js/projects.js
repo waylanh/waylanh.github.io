@@ -1,8 +1,10 @@
-function fadeIn(el) {
+function fadeIn(el, num) {
+  !num ? num = 1000: null;
   el.style.opacity = 0;
+  el.style.display = 'block';
   var last = +new Date();
   var tick = function() {
-    el.style.opacity = +el.style.opacity + (new Date() - last) / 1000;
+    el.style.opacity = +el.style.opacity + (new Date() - last) / num;
     last = +new Date();
     if (+el.style.opacity < 1) {
       (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
@@ -26,7 +28,10 @@ function myProjects(data) {
   data.forEach(function(project) {
     html += `<div class="column">
               <div class="card">
-                <img src="${project.image}" alt="Project image">
+                <div class="img-contain">
+                  <img src="${project.image2}" class="over" alt="Project image">
+                  <img src="${project.image}" alt="Project image">
+                </div>
                 <h2>${project.title}</h2>
                 <p class="title">${project.text}</p>
                 ${!project.image ? '<p class="soon">Coming Soon.</p>': ''}

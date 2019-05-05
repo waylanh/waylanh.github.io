@@ -71,8 +71,21 @@ body{
   box-shadow: 0px 5px 10px gray;
   transform: translateY(-5px);
 }
+.card:hover .over{
+  opacity: 0;
+}
 .card img{
   width: 100%;
+}
+.img-contain{
+  position: relative;
+}
+.over{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all .3s;
 }
 .title {
   color: grey;

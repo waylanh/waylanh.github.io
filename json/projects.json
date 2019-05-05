@@ -2,7 +2,8 @@
   {
     "title": "Socketeer",
     "text": "Instant messaging app.",
-    "image": "img/screen/socket.png",
+    "image": "img/screen/socket.jpg",
+    "image2": "img/screen/socket_pixel.jpg",
     "site": "https://wise-ticket.glitch.me/",
     "code": "https://github.com/Waymans/Anonymous-Message-Board"
   },
@@ -10,6 +11,7 @@
     "title": "A.M.B",
     "text": "Anonymous message board.",
     "image": "img/screen/message.jpg",
+    "image2": "img/screen/message_pixel.jpg",
     "site": "https://mess-board1-project.glitch.me/",
     "code": "https://github.com/Waymans/Anonymous-Message-Board"
   },
@@ -17,27 +19,31 @@
     "title": "A&P",
     "text": "Local Bar & Grill model.",
     "image": "img/screen/cafeLogo.jpg",
+    "image2": "img/screen/cafeLogo_pixel.jpg",
     "site": "sites/cafeLogo/index.html",
     "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/cafeLogo"
   },
   {
     "title": "Ratchet",
     "text": "Band webpage mock-up.",
-    "image": "img/screen/bandPage.png",
+    "image": "img/screen/bandPage.jpg",
+    "image2": "img/screen/bandPage_pixel.jpg",
     "site": "sites/bandPage/index.html",
     "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/bandPage"
   },
   {
     "title": "Fresh",
     "text": "Fictional app download page.",
-    "image": "img/screen/newApp.png",
+    "image": "img/screen/newApp.jpg",
+    "image2": "img/screen/newApp_pixel.jpg",
     "site": "sites/newApp/index.html",
     "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/newApp"
   },
   {
     "title": "Photo-EQ",
     "text": "Photo equipment site layout.",
-    "image": "img/screen/photoPage.png",
+    "image": "img/screen/photoPage.jpg",
+    "image2": "img/screen/photoPage_pixel.jpg",
     "site": "sites/photoPage/index.html",
     "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/photoPage"
   },

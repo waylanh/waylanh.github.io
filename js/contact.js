@@ -1,8 +1,10 @@
-function fadeIn(el) {
+function fadeIn(el, num) {
+  !num? num = 1000: null;
   el.style.opacity = 0;
+  el.style.display = 'block';
   var last = +new Date();
   var tick = function() {
-    el.style.opacity = +el.style.opacity + (new Date() - last) / 1000;
+    el.style.opacity = +el.style.opacity + (new Date() - last) / num;
     last = +new Date();
     if (+el.style.opacity < 1) {
       (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);

@@ -78,6 +78,8 @@ img{
 }
 .personal, .info-links{
   text-align: left;
+  width: 50%;
+  margin: auto;
 }
 .link-text{
   font-size: 15px;
@@ -126,7 +128,7 @@ footer{
 /* Media Querries */
 
 @media screen and (max-width: 600px) {
-  .col {
+  .col, .personal, .info-links {
     width: 100%;
     padding: 0;
   }
