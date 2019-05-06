@@ -1,17 +1,3 @@
-function fadeIn(el, num) {
-  !num ? num = 1000: null;
-  el.style.opacity = 0;
-  el.style.display = 'block';
-  var last = +new Date();
-  var tick = function() {
-    el.style.opacity = +el.style.opacity + (new Date() - last) / num;
-    last = +new Date();
-    if (+el.style.opacity < 1) {
-      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
-    }
-  };
-  tick();
-}
 fadeIn(document.getElementById('nav'));
 
 fetch('/json/projects.json')
@@ -29,8 +15,8 @@ function myProjects(data) {
     html += `<div class="column">
               <div class="card">
                 <div class="img-contain">
-                  <img src="${project.image2}" class="over" alt="Project image">
-                  <img src="${project.image}" alt="Project image">
+                  <img src="${project.image2}" alt="Project image">
+                  <img src="${project.image}" onload="fadeIn(this)" class="over" alt="Project image">
                 </div>
                 <h2>${project.title}</h2>
                 <p class="title">${project.text}</p>

@@ -11,6 +11,22 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel="stylesheet" href="css/projects.css">
     <script src="js/projects.js" defer></script>
+    <script>
+      function fadeIn(el, num) {
+        !num ? num = 1000: null;
+        el.style.opacity = 0;
+        el.style.display = 'block';
+        var last = +new Date();
+        var tick = function() {
+          el.style.opacity = +el.style.opacity + (new Date() - last) / num;
+          last = +new Date();
+          if (+el.style.opacity < 1) {
+            (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+          }
+        };
+        tick();
+      }
+    </script>
   </head>
   <body>
     <header>
