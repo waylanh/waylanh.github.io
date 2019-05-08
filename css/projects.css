@@ -100,7 +100,9 @@ body{
   border-radius: 50%;  
 }
 .inner{
-  display:flex;justify-content:center;align-items:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
   position: absolute;
   top:0;
   left:0;
@@ -110,6 +112,7 @@ body{
 .title {
   color: grey;
   font-size: 18px;
+  margin-top: 0;
 }
 .card a {
   border: none;
@@ -133,17 +136,15 @@ body{
 .soon{
   color: #FF4136;
 }
+.card h2{
+  padding: 1rem;
+  margin: 0;
+}
 
 /* footer */
 
 .none {
   display: none;
-}
-.scrollTop{
-  position: fixed;
-  bottom: 30px;
-  right: 0px;
-  font-size: 50px;
 }
 .copyright{
   font-size: 11px;
