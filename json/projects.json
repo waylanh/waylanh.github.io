@@ -55,10 +55,11 @@
   },
   {
     "title": "Data-Driven",
-    "text": "D3 compilation.",
-    "image": "",
-    "site": "",
-    "code": ""
+    "text": "A D3 collection.",
+    "image": "img/screen/d3Compile.jpg",
+    "blank": "img/screen/blank.jpg",
+    "site": "sites/d3Compile/index.html",
+    "code": "https://github.com/Waymans/d3-compile"
   },
   {
     "title": "Native",
