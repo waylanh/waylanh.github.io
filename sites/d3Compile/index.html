@@ -4,10 +4,6 @@
     <meta charset="UTF-8"> 
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Document</title> 
-    <link rel="stylesheet" 
-          href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
-          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-          crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Gugi|Stylish|Major+Mono+Display" rel="stylesheet"> 
     <link href="./styles.css" rel="stylesheet">
     <script src="http://d3js.org/d3.v4.min.js"></script>
@@ -15,32 +11,50 @@
     <script src="./client.js" defer></script> 
   </head> 
   <body> 
+    <nav id="sidenav" class="sidenav">
+      <a id="close" class="closebtn">&times;</a>
+      <a href="#">Home</a>
+      <a href="#line">Line</a>
+      <a href="#bar">Bar</a>
+      <a href="#dot">Dot</a>
+      <a href="#box">Box</a>
+      <a href="#map">Map</a>
+      <a href="#tree">Tree</a>
+    </nav>
+    <span id="openbtn" class="open">&#9776;</span>
     <svg id="main" viewBox="0 0 100 100"></svg>
     <svg id="fixed" height="100" width="100">
       <polygon points="0,0 100,0 0,100" style="fill:#0074D9;" />
       <a href="https://github.com/Waymans" target="_blank">
-        <text x="25" y="35" text-anchor="middle" transform="rotate(-45 35,20)" fill="white">GitHub</text>
+        <text x="25" y="30" text-anchor="middle" transform="rotate(-45 35,20)" fill="white">GitHub</text>
+      </a>SVG
+    </svg>
+    <svg id="fixed2" height="100" width="100">
+      <polygon points="100,100 100,0 0,100" style="fill:#0074D9;" />
+      <a href="https://d3js.org" target="_blank">
+        <text x="25" y="80" text-anchor="middle" transform="rotate(-45 35,20)" fill="white">D3.js</text>
       </a>SVG
     </svg>
     <section id="line">
-      <input name="updateButton" type="button" value="Toggle Line" onclick="updateLine()" />
+      <h3 class="marg">Changing Line</h3>
       <div id="lineGraph"></div>
+      <input name="updateButton" type="button" value="Toggle Line" onclick="updateLine()" />
     </section>
     <section id="bar">
-      <h3>United States Gross Domestic Product</h3>
+      <h3 class="marg">United States Gross Domestic Product</h3>
       <div id="barGraph"></div>
     </section>
-    <section id="scatter">
-      <h3>Doping in Professional Cycling</h3>
+    <section id="dot">
+      <h3 class="marg">Doping in Professional Cycling</h3>
       <div id="dotGraph"></div>
     </section>
     <section id="box">
-      <h3>Monthly Temperature Variance</h3>
+      <h3 class="marg">Monthly Temperature Variance</h3>
       <h4>From 1753-2015; Base Temp: 8.66 \u2103</h4>
       <div id="boxGraph"></div>
     </section>
     <section id="map">
-      <h3>U.S Choropleth Map</h3>
+      <h3 class="marg">U.S Choropleth Map</h3>
       <h4>Percentage of 25yo+ with Bachelors Degree or Higher (2010-2014)</h4>
       <div id="mapGraph"></div>
     </section>
@@ -49,8 +63,7 @@
       <input name="updateButton" type="button" value="Toggle Tree" onclick="updateTree()" />
     </section>
     <footer>
-      Visit <a href="https://d3js.org" target="_blank">D3</a> for documentation and more cool stuff.
-      <p>Copyright @ 2019 | Waymans</p>
+      Copyright @ 2019 | Waymans
     </footer>
   </body> 
 </html> 

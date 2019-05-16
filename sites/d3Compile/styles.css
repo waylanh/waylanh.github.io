@@ -16,15 +16,23 @@ section{
   justify-content: center;
   align-items: center;
 }
+.marg{
+  padding-top: 30px;
+}
 #fixed{
   position: fixed;
   top: 0;
   left: 0;
 }
+#fixed2{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
 .text {
   font-family: monospace;
   font-family: 'Major Mono Display', monospace;
-  font-size: 5px;
+  font-size: 7px;
 }
 .enter {
   fill: #0074D9;
@@ -34,6 +42,57 @@ section{
 }
 .exit {
   fill: #FF4136;
+}
+
+/* nav */
+.open{
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 24px;
+  color: #0074D9;
+}
+.open:hover, .closebtn:hover{
+  cursor: default;
+}
+.sidenav {
+  font-family: 'Major Mono Display', monospace;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: #0074D9;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+  cursor: default;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+.nav-width{
+  width: 200px
+}
+@media only screen and (max-width: 400px){
+  .nav-width{ width: 50%; }
 }
 
 /* line */

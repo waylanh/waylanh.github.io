@@ -1,10 +1,22 @@
 var w = window.innerWidth;
 var h = window.innerHeight;
 
-var arr = [ 'Welcome','to a D3','Compilation','Welcome to a D3 Compilation' ];
+document.getElementById('openbtn').addEventListener('click',openNav);
+document.getElementById('close').addEventListener('click',closeNav);
+
+function openNav() {
+  document.getElementById("sidenav").classList.add('nav-width');
+}
+function closeNav() {
+  document.getElementById("sidenav").classList.remove('nav-width');
+}
+
+var arr = [ 'Welcome','to a data-driven','Compilation','Welcome to a D3 Compilation' ];
 var alphabet = "a data-driven compilation".split("");
 var svg = d3.select("svg"),
-    g = svg.append("g").attr("transform", "translate(0,50)");
+    width = +svg.attr("width"),
+    height = +svg.attr("height"),
+    g = svg.append("g").attr("transform", "translate(-15,50)");
 
 function update(data) {
   var t = d3.transition()
@@ -25,13 +37,13 @@ function update(data) {
       .attr("y", 0)
       .style("fill-opacity", 1)
     .transition(t)
-      .attr("x", function(d, i) { return i * 4; });
+      .attr("x", function(d, i) { return i * 5; });
   // ENTER new elements present in new data.
   text.enter().append("text")
       .attr("class", "enter text")
       .attr("dy", ".35em")
       .attr("y", -10)
-      .attr("x", function(d, i) { return i * 4; })
+      .attr("x", function(d, i) { return i * 5; })
       .style("fill-opacity", 1e-6)
       .text(function(d) { return d; })
     .transition(t)
@@ -77,8 +89,8 @@ q.awaitAll(function(error, jsonDataSets) {
 /* **************************************************** LINE ***************************************************** */
 
   var line_margin = {top: 30, right: 20, bottom: 30, left: 50},
-      line_width = w - line_margin.left - line_margin.right,
-      line_height = h - line_margin.top - line_margin.bottom;
+      line_width = 950 - line_margin.left - line_margin.right,
+      line_height = 500 - line_margin.top - line_margin.bottom;
   // Parse the date / time
   var line_parseDate = d3.timeParse("%d-%b-%y");
   // Set the ranges
@@ -86,15 +98,17 @@ q.awaitAll(function(error, jsonDataSets) {
   var line_y = d3.scaleLinear().range([line_height, 0]);
   // Adds the svg canvas
   var line_svg = d3.select("#lineGraph")
+      .style('width','80%')
+      .style('margin','auto')
       .append("svg")
-        .attr('viewBox', '0 0 ' + (line_width+line_margin.right+line_margin.left) + ' ' + (line_height+line_margin.top+line_margin.bottom))
-        .attr('preserveAspectRatio', 'xMidYMid meet')
-        .style('padding','10%')
+      .attr('viewBox', '0 0 ' + (line_width+line_margin.right+line_margin.left) + ' ' + (line_height+line_margin.top+line_margin.bottom))
+      .attr('preserveAspectRatio', 'xMidYMid meet')
+      .style('padding', '10px')
       .append("g")
-        .attr("transform", "translate(" + line_margin.right + ",0)");
+      .attr("transform", "translate(" + line_margin.left + ",0)");
   // Define the axes
   var line_xAxis = d3.axisBottom(line_x).ticks(5);
-  var line_yAxis = d3.axisLeft(line_y).ticks(5);
+  var line_yAxis = d3.axisLeft(line_y).ticks(4);
   // Define the line
   var line_valueline = d3.line()
       .x(function(d) { return line_x(d.date); })
@@ -157,8 +171,8 @@ function updateLine() {
 
 function makeBar(data){
   var bar_margin = {top: 30, right: 20, bottom: 30, left: 50},
-      bar_width = w - bar_margin.left - bar_margin.right,
-      bar_height = h - bar_margin.top - bar_margin.bottom;
+      bar_width = 1050 - bar_margin.left - bar_margin.right,
+      bar_height = 600 - bar_margin.top - bar_margin.bottom;
 
   const bar_padding = 50;
                         
@@ -261,7 +275,7 @@ function makeBar(data){
           .call(bar_yAxis);
     
         bar_svg.append('text')
-          .attr('x', bar_height/2)
+          .attr('x', bar_height/1.5)
           .attr('y', bar_height-3)
           .style('fill', 'black')
           .text('Year')
@@ -274,10 +288,10 @@ function makeBar(data){
           .attr('transform', 'rotate(-90)')
     
         bar_svg.append('text')
-          .attr('x', bar_height+85)
+          .attr('x', bar_height+305)
           .attr('y', bar_height-3)
           .style('fill', 'gray')
-          .text('More Info:http://www.bea.gov/national/pdf/nipaguid.pdf')
+          .html('<a href="http://www.bea.gov/national/pdf/nipaguid.pdf" target="_blank">More Info</a>')
   
 }
 
@@ -286,8 +300,8 @@ function makeBar(data){
 function makeDot(data){
   const html = data;
     const m = {top: 20, right: 20, bottom: 0, left: 20};
-    //const w = 1000;
-    //const h = 500;
+    const h = 550;
+    const w = 950;
     const padding = 50;
     
     const timeFormat = d3.timeFormat("%M:%S");
@@ -419,9 +433,8 @@ function makeDot(data){
 
 function makeBox(data){
   const html = data.monthlyVariance;
-    
-    //const w = 1315;
-    //const h = 494;
+    const h = 600;
+    const w = 1150;
     const padding = 50;
 
     const labels = ['3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
@@ -485,11 +498,9 @@ function makeBox(data){
                       .style('font-size','15px')
                       .attr('data-year', d.year)
                       .attr('data-month', d.month-1)
-                    //d3.select('.cell').style('fill', 'white')
                   })
                   .on('mouseout', () => {
                     box_tooltip.style('opacity', 0);
-                    //d3.select('.cell').style('fill', (d,i)=> color(d.variance));
                   })
                   .append('title')
                   .attr('class','tick')
@@ -537,15 +548,15 @@ function makeBox(data){
                       });
 
                 legend.append("rect")
-                      .attr("x", w-600)
+                      .attr("x", w-350)
                       .attr("width", 30)
                       .attr("height", 20)
                       .style('border', '1px solid black')
                       .style("fill", (d, i)=> color(d));
 
                 legend.append("text")
-                      .attr("x", w-590)
-                      .attr("y", 20)
+                      .attr("x", w-340)
+                      .attr("y", 15)
                       .attr("dy", "18px")
                       .style("fill", 'black')
                       .html( (d, i)=> {
@@ -586,23 +597,16 @@ function makeMap(jsonE, jsonC){
             .style('pointer-events', 'none')
             .style('background', 'lightsteelblue')
             .style('font-size', '20px')
-      
-      const container = body.append('div')
-            .style('display', 'inline')
-            .style('justify-content', 'center')
-            .attr('id', 'container')
-            .append('div')
-            .style('height', h + m.top + m.bottom)
-            .style('width', w + m.left + m.right)
             
       
-      const svg = container.append('svg')
+      const svg = body.append('svg')
             .attr('id', 'map')
-            .attr('viewBox', '0 0 ' + (w + m.left + m.right) + ' ' + (h + m.top + m.bottom))
+            .attr('viewBox', '0 0 ' + (w + m.left + m.right + 100) + ' ' + (h + m.top + m.bottom))
             .attr('preserveAspectRatio', 'xMidYMid meet')
             
 
-      const us = svg.append('g')
+      const us = svg.append('g') 
+            .attr('transform', 'translate(50,0)')
             .selectAll("path")
             .data(topojson.feature(jsonC, jsonC.objects.counties).features)
             .enter()
