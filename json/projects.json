@@ -16,6 +16,22 @@
     "code": "https://github.com/Waymans/Anonymous-Message-Board"
   },
   {
+    "title": "CryptoC",
+    "text": "App made with React Native.",
+    "image": "img/screen/cryptoc.jpg",
+    "blank": "img/screen/blank.jpg",
+    "site": "https://snack.expo.io/@waymans/belligerent-juice-box",
+    "code": "https://github.com/Waymans/cryptocurrencyApp"
+  },
+  {
+    "title": "Data-Driven",
+    "text": "A D3 collection.",
+    "image": "img/screen/d3Compile.jpg",
+    "blank": "img/screen/blank.jpg",
+    "site": "sites/d3Compile/index.html",
+    "code": "https://github.com/Waymans/d3-compile"
+  },
+  {
     "title": "A&P",
     "text": "Local Bar & Grill model.",
     "image": "img/screen/cafeLogo.jpg",
@@ -47,22 +63,6 @@
     "blank": "img/screen/blank.jpg",
     "site": "sites/photoPage/index.html",
     "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/photoPage"
-  },
-  {
-    "title": "Data-Driven",
-    "text": "A D3 collection.",
-    "image": "img/screen/d3Compile.jpg",
-    "blank": "img/screen/blank.jpg",
-    "site": "sites/d3Compile/index.html",
-    "code": "https://github.com/Waymans/d3-compile"
-  },
-  {
-    "title": "CryptoC",
-    "text": "App made with React Native.",
-    "image": "img/screen/cryptoc.jpg",
-    "blank": "img/screen/blank.jpg",
-    "site": "https://snack.expo.io/@waymans/belligerent-juice-box",
-    "code": "https://github.com/Waymans/cryptocurrencyApp"
   },
   {
     "title": "Serv",
