@@ -59,7 +59,7 @@
   {
     "title": "CryptoC",
     "text": "App made with React Native.",
-    "image": "",
+    "image": "img/screen/cryptoc.jpg",
     "blank": "img/screen/blank.jpg",
     "site": "https://snack.expo.io/@waymans/belligerent-juice-box",
     "code": "https://github.com/Waymans/cryptocurrencyApp"
