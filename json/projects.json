@@ -24,6 +24,14 @@
     "code": "https://github.com/Waymans/cryptocurrencyApp"
   },
   {
+    "title": "Serv",
+    "text": "Issue Tracker.",
+    "image": "",
+    "blank": "img/screen/blank.jpg",
+    "site": "https://issue-track1-project.glitch.me/",
+    "code": "https://github.com/Waymans/Issue-Tracker"
+  },
+  {
     "title": "Data-Driven",
     "text": "A D3 collection.",
     "image": "img/screen/d3Compile.jpg",
@@ -63,13 +71,5 @@
     "blank": "img/screen/blank.jpg",
     "site": "sites/photoPage/index.html",
     "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/photoPage"
-  },
-  {
-    "title": "Serv",
-    "text": "Public service apps.",
-    "image": "",
-    "blank": "img/screen/blank.jpg",
-    "site": "",
-    "code": ""
   }
 ]
