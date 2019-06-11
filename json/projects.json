@@ -26,7 +26,7 @@
   {
     "title": "Serv",
     "text": "Issue Tracker.",
-    "image": "",
+    "image": "img/screen/issue.jpg",
     "blank": "img/screen/blank.jpg",
     "site": "https://issue-track1-project.glitch.me/",
     "code": "https://github.com/Waymans/Issue-Tracker"
