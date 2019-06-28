@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Waylan Hedine's portfolio.">
+    <meta name="description" content="Waylan Hedine's portfolio projects.">
     <meta name="keywords" content="web, web development, web design, html, css, javaScript, jQuery, front-end, back-end, full stack, react, d3, node, mongodb">
     <meta name="author" content="Waylan Hedine">
-    <meta property="og:title" content="Waylan Hedine's Portfolio" />
+    <meta property="og:title" content="Waylan Hedine's portfolio projects." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://waymans.github.io/" />
     <meta property="og:image" content="./img/blank.jpg" />
-    <meta property="og:description" content="Waylan Hedine's portfolio." />
-    <title>Waylan Hedine's Portfolio</title>
+    <meta property="og:description" content="Waylan Hedine's Portfolio Projects" />
+    <title>Waylan Hedine's Portfolio Projects</title>
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -27,27 +27,45 @@
         "url": "https://waymans.github.io/",
       }
     </script>
-    <script src="js/index.js" defer></script>
+    <script src="js/projects.js" defer></script>
+    <script>
+      function fadeIn(el, num) {
+        !num ? num = 1000: null;
+        el.localName === 'img' ? el.previousElementSibling.style.display = 'none': null;
+        el.style.opacity = 0;
+        el.style.display = 'block';
+        var last = +new Date();
+        var tick = function() {
+          el.style.opacity = +el.style.opacity + (new Date() - last) / num;
+          last = +new Date();
+          if (+el.style.opacity < 1) {
+            (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+          }
+        };
+        tick();
+      }
+      function dimension(item) {
+        item.nextElementSibling.style.display = 'flex';
+      }
+    </script>
   </head>
-  <body> 
+  <body>
     <header>
       <nav>  
         <ul id="nav" class="navUl none">
-          <li class="navLi"><a class="navA" href="./index.html">Home</a></li>
+          <li class="navLi"><a class="navA" href="https://github.com/Waymans" target="_blank">GitHub</a></li>
+          <li class="navLi"><a class="navA" href="https://glitch.com/@waymans" target="_blank">Glitch</a></li>
+          <li class="navLi"><a class="navA" href="mailto:hedin090@umn.edu">Email</a></li>
+          <!--<li class="navLi"><a class="navA" href="./projects.html">Home</a></li>-->
           <!--<li class="navLi"><a class="navA" href="./about.html">About</a></li>-->
-          <li class="navLi"><a class="navA" href="./projects.html">Projects</a></li>
-          <li class="navLi"><a class="navA" href="./contact.html">Contact</a></li>
+          <!--<li class="navLi"><a class="navA" href="./contact.html">Contact</a></li>-->
         </ul>
       </nav>
     </header>
-      <section id="home" class="home">
-        <header id="head" class="center-text none">
-          <h1 class="text-title"><strong>WAYLAN</strong> HEDINE</h1>
-          <h3><span>Developer</span></h3>
-        </header>
+      <section id="projects" class="projects">
+        <!-- JavaScript --> 
       </section>
     <footer>
-      <p class="copyright">Image from <a href="https://picjumbo.com" target="_blank">picjumbo</a>.</p>
       <span class="copyright">Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> | Waylan Hedine</span>
     </footer>
   </body>

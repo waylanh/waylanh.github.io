@@ -10,7 +10,7 @@ fetch('/json/projects.json')
   });
  
 function myProjects(data) {
-  var html = `<h1>Projects</h1><div class="row">`;
+  var html = `<h1>Waylan Hedine</h1><div class="row">`;
   data.forEach(function(project) {
     html += `<div class="column">
               <div class="card">
