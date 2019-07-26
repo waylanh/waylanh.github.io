@@ -46,38 +46,5 @@
     "blank": "img/screen/blank.jpg",
     "site": "sites/d3Compile/index.html",
     "code": "https://github.com/Waymans/d3-compile"
-  },
-  {
-    "title": "A&P",
-    "text": "Local Bar & Grill model.",
-    "image": "img/screen/cafeLogo.jpg",
-    "blank": "img/screen/blank.jpg",
-    "site": "sites/cafeLogo/index.html",
-    "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/cafeLogo"
-  },
-  {
-    "title": "Ratchet",
-    "text": "Band webpage mock-up.",
-    "image": "img/screen/bandPage.jpg",
-    "blank": "img/screen/blank.jpg",
-    "site": "sites/bandPage/index.html",
-    "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/bandPage"
-  },
-  {
-    "title": "Fresh",
-    "text": "Fictional app download page.",
-    "image": "img/screen/newApp.jpg",
-    "image2": "img/screen/newApp_pixel.jpg",
-    "blank": "img/screen/blank.jpg",
-    "site": "sites/newApp/index.html",
-    "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/newApp"
-  },
-  {
-    "title": "Photo-EQ",
-    "text": "Photo equipment site layout.",
-    "image": "img/screen/photoPage.jpg",
-    "blank": "img/screen/blank.jpg",
-    "site": "sites/photoPage/index.html",
-    "code": "https://github.com/Waymans/Waymans.github.io/tree/master/sites/photoPage"
   }
 ]
