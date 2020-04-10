@@ -1,16 +1,10 @@
-function fadeIn(el, num) {
-  !num ? num = 1000: null;
-  el.style.opacity = 0;
-  el.style.display = 'block';
-  var last = +new Date();
-  var tick = function() {
-    el.style.opacity = +el.style.opacity + (new Date() - last) / num;
-    last = +new Date();
-    if (+el.style.opacity < 1) {
-      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
-    }
-  };
-  tick();
-}
-fadeIn(document.getElementById('nav'));
-setTimeout( ()=> {fadeIn(document.getElementById('head'), 2000)}, 1000 );
+document.addEventListener("DOMContentLoaded", function (event) {
+    document.getElementById('dropDown').addEventListener('click', function () {
+        var x = document.getElementsByClassName('drop-down')[0];
+        if (x.style.display === "none") {
+            x.classList.add('drop-down--active');
+        } else {
+            x.classList.remove('drop-down--active');
+        }
+    })
+});
