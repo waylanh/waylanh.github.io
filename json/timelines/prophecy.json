@@ -51,7 +51,7 @@
             "background": "#333",
             "autolink": "",
             "unique_id": ""
-      },
+    },
         {
             "media": {
                 "url": "",
@@ -92,33 +92,35 @@
             "background": "",
             "autolink": "",
             "unique_id": ""
-      },
-    ],
-    "eras": [{
-        "start_date": {
-            "year": "-",
-            "month": "",
-            "day": "",
-            "hour": "",
-            "minute": "",
-            "second": "",
-            "millisecond": "",
-            "display_date": ""
-        },
-        "end_date": {
-            "year": "",
-            "month": "",
-            "day": "",
-            "hour": "",
-            "minute": "",
-            "second": "",
-            "millisecond": "",
-            "display_date": ""
-        },
-        "text": {
-            "headline": "",
-            "text": ""
-        }
-    }],
+    }
+  ],
+    "eras": [
+        {
+            "start_date": {
+                "year": "-",
+                "month": "",
+                "day": "",
+                "hour": "",
+                "minute": "",
+                "second": "",
+                "millisecond": "",
+                "display_date": ""
+            },
+            "end_date": {
+                "year": "",
+                "month": "",
+                "day": "",
+                "hour": "",
+                "minute": "",
+                "second": "",
+                "millisecond": "",
+                "display_date": ""
+            },
+            "text": {
+                "headline": "",
+                "text": ""
+            }
+    }
+  ],
     "scale": "human"
 }
