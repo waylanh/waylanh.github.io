@@ -1,6 +1,4 @@
 remote_theme: just-the-docs/just-the-docs
-# Welcome to Jekyll!
-#
 # This config file is meant for settings that affect your whole site, values
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing these this file very often, consider using Jekyll's data files
@@ -14,7 +12,7 @@ remote_theme: just-the-docs/just-the-docs
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: waylanh
+title: waylanh.github.io
 description: Documentation on various topics.
 #baseurl: "/docs" # the subpath of your site, e.g. /blog
 url: "https://waylanh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
