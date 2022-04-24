@@ -10,3 +10,26 @@ permalink: docs/test/util
 {: .no_toc }
 Verbiage
 {: .fs-6 .fw-300 }
+
+<div class="code-example" markdown="1">
+
+<div class="code-example" markdown="1">
+
+[Link button](http://example.com/){: .btn }
+
+</div>
+```markdown
+[Link button](http://example.com/){: .btn }
+```
+
+</div>
+{% highlight markdown %}
+<div class="code-example" markdown="1">
+
+[Link button](http://example.com/){: .btn }
+
+</div>
+```markdown
+[Link button](http://example.com/){: .btn }
+```
+{% endhighlight %}
