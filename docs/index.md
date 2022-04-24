@@ -1,37 +1,181 @@
-## Welcome to GitHub Pages
+---
+layout: default
+title: Syntax
+nav_order: 99
+---
 
-You can use the [editor on GitHub](https://github.com/waylanh/waylanh.github.io/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[Link to another page](another-page).
 
-### Markdown
+There should be whitespace between paragraphs.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-```markdown
-Syntax highlighted code block
+# [](#header-1)Header 1
 
-# Header 1
-## Header 2
-### Header 3
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
-- Bulleted
-- List
+## [](#header-2)Header 2
 
-1. Numbered
-2. List
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
 
-**Bold** and _Italic_ and `Code` text
+### [](#header-3)Header 3
 
-[Link](url) and ![Image](src)
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
 
-### Jekyll Themes
+#### [](#header-4)Header 4 `with code not transformed`
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/waylanh/waylanh.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
 
-### Support or Contact
+##### [](#header-5)Header 5
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+1.  This is an ordered list following a header.
+2.  This is an ordered list following a header.
+3.  This is an ordered list following a header.
+
+###### [](#header-6)Header 6
+
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
+
+### There's a horizontal rule below this.
+
+* * *
+
+### Here is an unordered list:
+
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
+
+### And an ordered list:
+
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
+
+### And a nested list:
+
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+
+### Nesting an ol in ul in an ol
+
+- level 1 item (ul)
+  1. level 2 item (ol)
+  1. level 2 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+- level 1 item (ul)
+  1. level 2 item (ol)
+  1. level 2 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+  1. level 4 item (ol)
+  1. level 4 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+- level 1 item (ul)
+
+### And a task list
+
+- [ ] Hello, this is a TODO item
+- [ ] Hello, this is another TODO item
+- [x] Goodbye, this item is done
+
+### Small image
+
+![](../../assets/images/small-image.jpg)
+
+### Large image
+
+![](../../assets/images/large-image.jpg)
+
+"[Wroclaw University Library digitizing rare archival texts](https://www.flickr.com/photos/97810305@N08/9401451269)" by [j_cadmus](https://www.flickr.com/photos/97810305@N08) is marked with [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/?ref=openverse).
+
+### Definition lists can be used with HTML syntax.
+
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+#### Multiple description terms and values
+
+Term
+: Brief description of Term
+
+Longer Term
+: Longer description of Term,
+  possibly more than one line
+
+Term
+: First description of Term,
+  possibly more than one line
+
+: Second description of Term,
+  possibly more than one line
+
+Term1
+Term2
+: Single description of Term1 and Term2,
+  possibly more than one line
+
+Term1
+Term2
+: First description of Term1 and Term2,
+  possibly more than one line
+
+: Second description of Term1 and Term2,
+  possibly more than one line
+
+### More code
+
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
+
+```
+The final element.
+```
